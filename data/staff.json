@@ -1,0 +1,61 @@
+{
+  "departments": [
+    {
+      "name": "Tennis & Junior Programs",
+      "contact": "Gian Pico",
+      "initials": "GP",
+      "role": "Tennis Director",
+      "phone": "(262) 674-7757",
+      "phonePlain": "2626747757",
+      "email": "gian@pvtfc.com",
+      "extension": "810",
+      "description": "Oversees all tennis programming including adult and junior lessons, leagues, drills, and tournaments.",
+      "supportsText": true
+    },
+    {
+      "name": "Fitness & Personal Training",
+      "contact": "Anne Mathie",
+      "initials": "AM",
+      "role": "Fitness Director",
+      "phone": "(262) 674-7740",
+      "phonePlain": "2626747740",
+      "email": "anne.mathie@pvtfc.com",
+      "extension": "809",
+      "description": "Manages fitness classes, personal training programs, and gym operations.",
+      "supportsText": true
+    },
+    {
+      "name": "General Management, Billing & Leagues",
+      "contact": "Kyle Leisses",
+      "initials": "KL",
+      "role": "General Manager",
+      "phone": "(262) 674-7772",
+      "phonePlain": "2626747772",
+      "email": "kyle@pvtfc.com",
+      "extension": "807",
+      "description": "Handles membership billing, league coordination, facility management, and general inquiries.",
+      "supportsText": true
+    }
+  ],
+  "mainLine": {
+    "phone": "(262) 677-3681",
+    "phonePlain": "2626773681",
+    "supportsText": true
+  },
+  "hiring": [
+    {
+      "position": "Tennis Instructors",
+      "description": "We are looking for enthusiastic tennis instructors to join our team.",
+      "contact": "Gian Pico",
+      "phone": "(262) 674-7757",
+      "email": "gian@pvtfc.com"
+    },
+    {
+      "position": "Personal Fitness Trainers",
+      "description": "Seeking certified personal trainers and group fitness instructors.",
+      "contact": "Anne Mathie",
+      "phone": "(262) 674-7740",
+      "email": "anne.mathie@pvtfc.com"
+    }
+  ]
+}

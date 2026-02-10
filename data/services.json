@@ -1,0 +1,132 @@
+{
+  "tennis": {
+    "title": "Tennis",
+    "subtitle": "Programs for Every Player",
+    "description": "Our tennis programs span all ages and skill levels—from youth and juniors to adults. Whether you're picking up a racquet for the first time or competing in league play, we have the programs and pros to keep you in the game.",
+    "features": [
+      "Junior Lessons & Clinics",
+      "Adult Lessons & Clinics",
+      "Private & Semi-Private Lessons",
+      "League Play (Men's, Women's, Mixed)",
+      "Drills & Cardio Tennis",
+      "Tournaments & Social Events",
+      "Court Reservations"
+    ],
+    "ratingSystem": "We use the National Tennis Rating Program (NTRP) to ensure players are matched with appropriate skill-level groups for lessons and league play.",
+    "director": "Gian Pico",
+    "images": {
+      "hero": "/assets/images/indoor_courts.webp",
+      "gallery": [
+        "/assets/images/indoor_courts.webp",
+        "/assets/images/outdoor_courts_with_people.webp",
+        "/assets/images/indoor_courts_with_pickleball_and_people.webp"
+      ]
+    }
+  },
+  "fitness": {
+    "title": "Fitness",
+    "subtitle": "Train Your Way",
+    "description": "Our fitness center is equipped to help you reach your goals, whether you're into cardio, strength training, or group classes. Beat the boredom with varied workouts and expert guidance from our certified trainers.",
+    "equipment": [
+      "Treadmills",
+      "Ellipticals",
+      "Rowing Machines",
+      "Circuit Training Machines",
+      "Free Weights",
+      "Kettlebells"
+    ],
+    "programs": [
+      "Group Fitness Classes (FREE for members)",
+      "Personal Training",
+      "Fitness Assessments",
+      "Custom Workout Plans"
+    ],
+    "classes": {
+      "intro": "Regular strength and cardio programs ranging from 30 minutes to one hour. All classes are FREE for PVTFC members.",
+      "schedule": [
+        {
+          "day": "Monday",
+          "name": "Cycle & Strength Intervals",
+          "time": "5:30 PM - 6:15 PM",
+          "description": "Alternating 4-minute intervals of cycling and strength training. All fitness levels welcome.",
+          "memberPrice": "Free",
+          "guestPrice": "$30"
+        },
+        {
+          "day": "Tuesday",
+          "name": "Full Body Express",
+          "time": "8:30 AM - 9:00 AM",
+          "description": "30-minute full-body strength session plus optional 10-minute stretch.",
+          "memberPrice": "Free",
+          "guestPrice": "$30"
+        },
+        {
+          "day": "Wednesday",
+          "name": "Cardio/Strength",
+          "time": "5:30 PM - 6:15 PM",
+          "description": "Total body workout using varied equipment. Modifications available for all fitness levels.",
+          "memberPrice": "Free",
+          "guestPrice": "$30"
+        },
+        {
+          "day": "Thursday",
+          "name": "Cycle N'Core",
+          "time": "6:00 PM - 6:45 PM",
+          "description": "30 minutes of cycling intervals (hills & speed) followed by 15 minutes of core work.",
+          "memberPrice": "Free",
+          "guestPrice": "$30"
+        },
+        {
+          "day": "Saturday",
+          "name": "Muscle Up",
+          "time": "8:30 AM - 9:15 AM",
+          "description": "Full-body strength training for all experience levels and abilities.",
+          "memberPrice": "Free",
+          "guestPrice": "$30"
+        }
+      ]
+    },
+    "personalTraining": {
+      "description": "Certified Personal Trainers are here to help you in your fitness journey, every step of the way—whether you're just starting out, returning after a break or injury, or looking for professional guidance and motivation.",
+      "trainers": [
+        "Anne Mathie",
+        "Lucas Nett"
+      ],
+      "contact": "Anne Mathie"
+    },
+    "director": "Anne Mathie",
+    "images": {
+      "hero": "/assets/images/fitness_center_wide_shot.webp",
+      "gallery": [
+        "/assets/images/fitness_center_wide_shot.webp",
+        "/assets/images/fitness_center_weights_area.webp",
+        "/assets/images/fitness_center_spin_class.webp",
+        "/assets/images/fitness_center_group_class_room.webp"
+      ]
+    }
+  },
+  "pickleball": {
+    "title": "Pickleball",
+    "subtitle": "The Fastest-Growing Sport in America",
+    "description": "Pickleball has exploded in popularity, and Pleasant Valley is your home court. We offer both indoor and outdoor courts for casual play, competitive matches, and organized events.",
+    "features": [
+      "Indoor Courts",
+      "Outdoor Courts (Seasonal)",
+      "Open Play Sessions",
+      "Court Reservations"
+    ],
+    "pricing": {
+      "indoor": "$16/hour",
+      "outdoor": "$6/hour",
+      "guest": "$15/guest plus court time"
+    },
+    "guestPolicy": "Members may bring guests at guest rates. After 3 guest visits, a membership is required.",
+    "images": {
+      "hero": "/assets/images/indoor_courts_with_pickleball_and_people.webp",
+      "gallery": [
+        "/assets/images/indoor_courts_with_pickleball_and_people.webp",
+        "/assets/images/outdoor_courts_with_people.webp"
+      ]
+    }
+  }
+}

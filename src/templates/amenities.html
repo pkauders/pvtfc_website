@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Amenities — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="{{amenities.bar.images.hero}}" alt="The Final Set Lounge">
+    </div>
+    <div class="container">
+      <div class="page-hero__breadcrumb"><a href="/index.html">Home</a> / Amenities</div>
+      <h1>Amenities</h1>
+      <p>More than a gym &mdash; it's a clubhouse</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="two-col reveal">
+        <div>
+          <div class="section-header">
+            <span class="section-header__label">Shop</span>
+            <h2>{{amenities.proShop.title}}</h2>
+          </div>
+          <p>{{amenities.proShop.description}}</p>
+        </div>
+        <div>
+          <ul class="feature-list">
+            {{#each amenities.proShop.services}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider container">
+
+  <section class="section--sm">
+    <div class="container">
+      <div class="two-col reveal">
+        <div>
+          <div class="section-header">
+            <span class="section-header__label">Relax</span>
+            <h2>{{amenities.bar.title}}</h2>
+          </div>
+          <p>{{amenities.bar.description}}</p>
+          <p class="text-sm text-muted mt-4">{{amenities.bar.hours}}</p>
+          <div class="mt-6">
+            <img src="{{amenities.bar.images.hero}}" alt="The Final Set Lounge" style="border-radius: var(--radius-xl); width: 100%;" loading="lazy">
+          </div>
+        </div>
+        <div>
+          <ul class="feature-list">
+            {{#each amenities.bar.features}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider container">
+
+  <section class="section--sm">
+    <div class="container">
+      <div class="two-col reveal">
+        <div>
+          <div class="section-header">
+            <span class="section-header__label">Celebrate</span>
+            <h2>{{amenities.birthdayParties.title}}</h2>
+          </div>
+          <p>{{amenities.birthdayParties.description}}</p>
+          <div class="mt-6">
+            <p class="phone-link">
+              <a href="tel:{{staff.mainLine.phonePlain}}" class="font-semibold text-primary">{{staff.mainLine.phone}}</a>
+              <span class="phone-link__badge">Call or Text</span>
+            </p>
+            <a href="/contact.html" class="btn btn--outline-dark mt-4">{{amenities.birthdayParties.ctaText}}</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="mb-4">Details</h4>
+          <ul class="feature-list">
+            {{#each amenities.birthdayParties.details}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <div class="info-box mt-6">
+            <div class="info-box__title">Please Note</div>
+            <ul class="feature-list">
+              {{#each amenities.birthdayParties.policies}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="trial-banner reveal">
+        <h2>Come See It All in Person</h2>
+        <p>Schedule a tour and experience the Pleasant Valley difference. We'd love to show you around.</p>
+        <a href="/contact.html" class="btn btn--primary btn--lg">Schedule a Tour</a>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

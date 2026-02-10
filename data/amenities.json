@@ -1,0 +1,41 @@
+{
+  "proShop": {
+    "title": "Pro Shop",
+    "description": "Our on-site pro shop carries equipment, apparel, and accessories for tennis and pickleball players. We also offer professional racquet stringing services.",
+    "services": [
+      "Tennis & Pickleball Equipment",
+      "Apparel & Accessories",
+      "Racquet Stringing",
+      "Grip Replacement",
+      "Expert Advice"
+    ]
+  },
+  "bar": {
+    "title": "The Final Set Bar & Lounge",
+    "description": "Unwind after your match or workout at The Final Set, our full-service bar and lounge. Catch the game on our HDTVs, grab a drink, and enjoy the company of fellow members.",
+    "hours": "Opens daily at 6:30 PM",
+    "features": [
+      "Full-Service Bar",
+      "Two HDTVs for Sports Viewing",
+      "Comfortable Lounge Seating",
+      "Member Social Hub"
+    ],
+    "images": {
+      "hero": "/assets/images/lounge_hangout_area.webp"
+    }
+  },
+  "birthdayParties": {
+    "title": "Birthday Parties",
+    "description": "Celebrate your next birthday at Pleasant Valley! We offer court time and a dedicated party room for a fun, active celebration.",
+    "details": [
+      "Court rental at standard rates",
+      "Private party room: $100",
+      "Great for kids and adults"
+    ],
+    "policies": [
+      "No balloons allowed",
+      "Guests responsible for cleanup"
+    ],
+    "ctaText": "Book a Party"
+  }
+}

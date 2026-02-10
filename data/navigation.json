@@ -1,0 +1,28 @@
+{
+  "main": [
+    { "label": "Tennis", "href": "/tennis.html" },
+    { "label": "Fitness", "href": "/fitness.html" },
+    { "label": "Pickleball", "href": "/pickleball.html" },
+    { "label": "Memberships", "href": "/memberships.html" },
+    { "label": "Amenities", "href": "/amenities.html" },
+    { "label": "Contact", "href": "/contact.html" }
+  ],
+  "footer": [
+    {
+      "heading": "Programs",
+      "links": [
+        { "label": "Tennis", "href": "/tennis.html" },
+        { "label": "Fitness", "href": "/fitness.html" },
+        { "label": "Pickleball", "href": "/pickleball.html" }
+      ]
+    },
+    {
+      "heading": "Club",
+      "links": [
+        { "label": "Memberships", "href": "/memberships.html" },
+        { "label": "Amenities", "href": "/amenities.html" },
+        { "label": "Contact & Team", "href": "/contact.html" }
+      ]
+    }
+  ]
+}

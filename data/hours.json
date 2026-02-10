@@ -1,0 +1,10 @@
+{
+  "clubHours": [
+    { "days": "Monday - Friday", "hours": "6:00 AM - 10:00 PM" },
+    { "days": "Saturday - Sunday", "hours": "7:00 AM - 6:00 PM" }
+  ],
+  "barHours": [
+    { "days": "Daily", "hours": "6:30 PM - Close" }
+  ],
+  "holidayNotice": ""
+}

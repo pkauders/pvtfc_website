@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Fitness — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="{{services.fitness.images.hero}}" alt="PVTFC Fitness Center">
+    </div>
+    <div class="container">
+      <div class="page-hero__breadcrumb"><a href="/index.html">Home</a> / Fitness</div>
+      <h1>{{services.fitness.title}}</h1>
+      <p>{{services.fitness.subtitle}}</p>
+    </div>
+  </section>
+
+  <!-- Overview & Equipment -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div class="section-header">
+            <span class="section-header__label">Overview</span>
+            <h2>Train Your Way</h2>
+          </div>
+          <p>{{services.fitness.description}}</p>
+
+          <div class="mt-8">
+            <div class="section-header">
+              <span class="section-header__label">Equipment</span>
+              <h2>Our Equipment</h2>
+            </div>
+            <ul class="feature-list">
+              {{#each services.fitness.equipment}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <p class="text-sm text-muted">Questions about fitness programs?</p>
+            <p class="font-semibold">Contact {{services.fitness.director}}</p>
+            <p class="phone-link mt-2">
+              <a href="tel:{{staff.mainLine.phonePlain}}">{{staff.mainLine.phone}}</a>
+              <span class="phone-link__badge">Call or Text</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="image-gallery">
+            <div class="image-gallery__item">
+              <img src="/assets/images/fitness_center_wide_shot.webp" alt="PVTFC Fitness Center" loading="lazy">
+            </div>
+            <div class="image-gallery__item">
+              <img src="/assets/images/fitness_center_weights_area.webp" alt="PVTFC Weights Area" loading="lazy">
+            </div>
+            <div class="image-gallery__item">
+              <img src="/assets/images/fitness_center_group_class_room.webp" alt="PVTFC Group Class Room" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Group Classes Carousel -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Group Classes</span>
+        <h2>Weekly Fitness Classes</h2>
+        <p>{{services.fitness.classes.intro}}</p>
+      </div>
+
+      <script id="classScheduleData" type="text/plain">
+        {{#each services.fitness.classes.schedule}}
+        {{this.day}}||{{this.name}}||{{this.time}}||{{this.description}}||{{this.memberPrice}}||{{this.guestPrice}}
+        {{/each}}
+      </script>
+
+      <div class="class-pager reveal reveal-delay-1" style="max-width: 900px; margin: 0 auto;">
+        <div class="class-pager__nav class-pager__nav--top" id="classPagerNav">
+          <button class="class-pager__btn" id="classPrev" aria-label="Previous week">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Prev Week
+          </button>
+          <span class="class-pager__label" id="classPagerLabel"></span>
+          <button class="class-pager__btn" id="classNext" aria-label="Next week">
+            Next Week
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="class-schedule" id="classSchedule"></div>
+      </div>
+
+      <div class="text-center mt-8 reveal reveal-delay-2" style="display: flex; flex-direction: column; align-items: center;">
+        <p class="text-muted text-sm mb-4">Looking for more class times or special sessions?</p>
+        <p class="phone-link" style="justify-content: center;">
+          <a href="tel:{{staff.mainLine.phonePlain}}" class="font-semibold text-primary">{{staff.mainLine.phone}}</a>
+          <span class="phone-link__badge">Call or Text</span>
+        </p>
+        <p class="text-sm mt-2">Contact us for the full class schedule and upcoming sessions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Training -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col reveal">
+        <div>
+          <div class="section-header">
+            <span class="section-header__label">Personal Training</span>
+            <h2>One-on-One Coaching</h2>
+          </div>
+          <p>{{services.fitness.personalTraining.description}}</p>
+          <div class="mt-6">
+            <h4 class="mb-3">Our Trainers</h4>
+            <ul class="feature-list">
+              {{#each services.fitness.personalTraining.trainers}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="info-box">
+            <div class="info-box__title">Schedule a Session</div>
+            <p class="text-sm mb-4">Contact {{services.fitness.personalTraining.contact}} to book your personal training session.</p>
+            <p class="phone-link">
+              <a href="tel:{{staff.mainLine.phonePlain}}" class="font-semibold text-primary">{{staff.mainLine.phone}}</a>
+              <span class="phone-link__badge">Call or Text</span>
+            </p>
+            <p class="text-sm mt-2"><a href="mailto:{{site.email}}">{{site.email}}</a></p>
+            <a href="/contact.html" class="btn btn--outline-dark mt-6">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Trial CTA -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="trial-banner reveal">
+        <h2>Try It Free for One Week</h2>
+        <p>Not sure if it's right for you? Experience our fitness center with a complimentary one-week trial. No commitment required.</p>
+        <a href="/contact.html" class="btn btn--primary btn--lg">Start Your Free Trial</a>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "intro": "Join the Pleasant Valley family and gain access to our world-class tennis courts, fully equipped fitness center, pickleball courts, and social amenities. We have a membership option for every lifestyle.",
+  "callToAction": "Ready to join? Contact us to schedule a tour and find the membership that's right for you.",
+  "trialOffer": {
+    "enabled": true,
+    "title": "Try Us Free",
+    "description": "Experience everything Pleasant Valley has to offer with a complimentary one-week fitness trial. No commitment required.",
+    "buttonText": "Start Your Free Trial"
+  },
+  "plans": [
+    {
+      "name": "Tennis & Fitness",
+      "description": "Complete club access—play tennis, work out, and enjoy all amenities.",
+      "highlights": [
+        "Unlimited court reservations",
+        "Full fitness center access",
+        "Group fitness classes",
+        "League eligibility",
+        "Pro shop discounts",
+        "Bar & lounge access"
+      ],
+      "featured": true,
+      "ctaText": "Contact for Pricing"
+    },
+    {
+      "name": "Fitness Only",
+      "description": "Full access to our fitness center, classes, and social amenities.",
+      "highlights": [
+        "Full fitness center access",
+        "Group fitness classes",
+        "Personal training available",
+        "Bar & lounge access",
+        "One-week free trial"
+      ],
+      "featured": false,
+      "ctaText": "Contact for Pricing"
+    }
+  ],
+  "note": "All memberships include access to the bar & lounge and club events. Contact us for current rates, family plans, and corporate membership options."
+}

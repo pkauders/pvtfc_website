@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Contact &amp; Team — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__breadcrumb"><a href="/index.html">Home</a> / Contact</div>
+      <h1>Contact &amp; Team</h1>
+      <p>Get in touch with the right person</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Our Team</span>
+        <h2>Who to Contact</h2>
+        <p>Reach out directly to the department that can help you most. Our team is here to make your experience at Pleasant Valley exceptional.</p>
+      </div>
+
+      <div class="grid grid--3">
+        {{#each staff.departments}}
+        <div class="staff-card reveal reveal-delay-{{@index}}">
+          <div class="staff-card__avatar">{{this.initials}}</div>
+          <div class="staff-card__name">{{this.contact}}</div>
+          <div class="staff-card__role">{{this.role}}</div>
+          <div class="staff-card__dept">{{this.name}}</div>
+          <p class="text-sm text-muted mb-4">{{this.description}}</p>
+          <div class="staff-card__contact">
+            <span class="phone-link">
+              <a href="tel:{{this.phonePlain}}">{{this.phone}}</a>
+              {{#if this.supportsText}}
+              <span class="phone-link__badge">Call or Text</span>
+              {{/if}}
+            </span>
+            <a href="mailto:{{this.email}}">{{this.email}}</a>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div class="section-header">
+            <span class="section-header__label">Visit</span>
+            <h2>Location &amp; Hours</h2>
+          </div>
+
+          <div class="mb-8">
+            <h4 class="mb-4">Address</h4>
+            <p>{{site.address.street}}<br>{{site.address.city}}, {{site.address.state}} {{site.address.zip}}</p>
+            <p class="mt-4 phone-link">
+              <a href="tel:{{site.phonePlain}}" class="font-semibold text-primary">{{site.phone}}</a>
+              {{#if site.supportsText}}
+              <span class="phone-link__badge">Call or Text</span>
+              {{/if}}
+            </p>
+            <p class="mt-2"><a href="mailto:{{site.email}}">{{site.email}}</a></p>
+          </div>
+
+          <h4 class="mb-4">Club Hours</h4>
+          <table class="hours-table">
+            {{#each hours.clubHours}}
+            <tr>
+              <td>{{this.days}}</td>
+              <td>{{this.hours}}</td>
+            </tr>
+            {{/each}}
+          </table>
+
+          <h4 class="mb-4 mt-8">Bar &amp; Lounge Hours</h4>
+          <table class="hours-table">
+            {{#each hours.barHours}}
+            <tr>
+              <td>{{this.days}}</td>
+              <td>{{this.hours}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="section-header">
+            <span class="section-header__label">Reach Out</span>
+            <h2>Send Us a Message</h2>
+          </div>
+          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select id="department" name="department">
+                <option value="general">General Inquiry</option>
+                <option value="tennis">Tennis & Junior Programs</option>
+                <option value="fitness">Fitness & Personal Training</option>
+                <option value="billing">Billing & Memberships</option>
+                <option value="parties">Birthday Parties</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+          <p class="text-sm text-muted mt-4 phone-link">Or call/text us at <a href="tel:{{site.phonePlain}}">{{site.phone}}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="hiring-banner reveal">
+        <h3>Now Hiring</h3>
+        <p class="text-muted mb-6">Join the Pleasant Valley team! We're looking for passionate people to help our members thrive.</p>
+        {{#each staff.hiring}}
+        <div class="hiring-item">
+          <div class="hiring-item__info">
+            <h4>{{this.position}}</h4>
+            <p>{{this.description}}</p>
+          </div>
+          <div class="text-sm">
+            <p class="font-semibold">{{this.contact}}</p>
+            <a href="tel:{{this.phone}}">{{this.phone}}</a>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">Pleasant Valley Tennis &amp; Fitness Club</div>
+        <p class="footer__desc">{{site.description}}</p>
+        <p class="text-sm">{{site.address.street}}<br>{{site.address.city}}, {{site.address.state}} {{site.address.zip}}</p>
+      </div>
+      {{#each navigation.footer}}
+      <div>
+        <div class="footer__heading">{{this.heading}}</div>
+        <ul class="footer__links">
+          {{#each this.links}}
+          <li><a href="{{this.href}}">{{this.label}}</a></li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/each}}
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 Pleasant Valley Tennis &amp; Fitness Club. All rights reserved.</span>
+      <div class="footer__contact-info">
+        <a href="tel:{{site.phone}}">{{site.phone}}</a>
+        <a href="mailto:{{site.email}}">{{site.email}}</a>
+      </div>
+    </div>
+  </div>
+</footer>

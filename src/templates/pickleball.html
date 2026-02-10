@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Pickleball — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="{{services.pickleball.images.hero}}" alt="PVTFC Pickleball Courts">
+    </div>
+    <div class="container">
+      <div class="page-hero__breadcrumb"><a href="/index.html">Home</a> / Pickleball</div>
+      <h1>{{services.pickleball.title}}</h1>
+      <p>{{services.pickleball.subtitle}}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div class="section-header">
+            <span class="section-header__label">Overview</span>
+            <h2>Your Home Court</h2>
+          </div>
+          <p>{{services.pickleball.description}}</p>
+
+          <div class="mt-8">
+            <div class="section-header">
+              <span class="section-header__label">Court Rates</span>
+              <h2>Pricing</h2>
+            </div>
+            <div class="court-pricing">
+              <div class="court-price">
+                <div class="court-price__label">Indoor</div>
+                <div class="court-price__amount">{{services.pickleball.pricing.indoor}}</div>
+              </div>
+              <div class="court-price">
+                <div class="court-price__label">Outdoor</div>
+                <div class="court-price__amount">{{services.pickleball.pricing.outdoor}}</div>
+              </div>
+              <div class="court-price">
+                <div class="court-price__label">Guest</div>
+                <div class="court-price__amount text-sm">{{services.pickleball.pricing.guest}}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box mt-8">
+            <div class="info-box__title">Guest Policy</div>
+            <p class="text-sm">{{services.pickleball.guestPolicy}}</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="phone-link">
+              <a href="tel:{{staff.mainLine.phonePlain}}" class="font-semibold text-primary">{{staff.mainLine.phone}}</a>
+              <span class="phone-link__badge">Call or Text</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="section-header">
+            <span class="section-header__label">What's Available</span>
+            <h2>Features</h2>
+          </div>
+          <ul class="feature-list">
+            {{#each services.pickleball.features}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+
+          <div class="mt-8">
+            <a href="/contact.html" class="btn btn--outline-dark">Reserve a Court</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-gallery mt-12 reveal reveal-delay-3">
+        {{#each services.pickleball.images.gallery}}
+        <div class="image-gallery__item">
+          <img src="{{this}}" alt="PVTFC Pickleball" loading="lazy">
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      <div class="trial-banner reveal">
+        <h2>New to Pickleball?</h2>
+        <p>It's easy to learn and a blast to play. Contact us to find out about open play sessions and get started.</p>
+        <a href="/contact.html" class="btn btn--primary btn--lg">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

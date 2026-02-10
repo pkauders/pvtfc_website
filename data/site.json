@@ -1,0 +1,22 @@
+{
+  "name": "Pleasant Valley Tennis & Fitness Club",
+  "shortName": "PVTFC",
+  "tagline": "Your Home for Tennis, Fitness & Community",
+  "description": "Pleasant Valley Tennis & Fitness Club in Jackson, WI offers tennis, pickleball, fitness training, and community amenities for all ages and skill levels.",
+  "address": {
+    "street": "2754 Pleasant Valley Rd",
+    "city": "Jackson",
+    "state": "WI",
+    "zip": "53037"
+  },
+  "phone": "(262) 677-3681",
+  "phonePlain": "2626773681",
+  "email": "info@pvtfc.com",
+  "supportsText": true,
+  "socialMedia": {
+    "facebook": "https://www.facebook.com/pvtfc",
+    "instagram": ""
+  },
+  "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5!2d-88.1667!3d43.3233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE5JzI0LjAiTiA4OMKwMTAnMDAuMCJX!5e0!3m2!1sen!1sus!4v1234567890",
+  "fitnessCalendarId": "pvtfc.fitness@gmail.com"
+}

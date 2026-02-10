@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Memberships — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__breadcrumb"><a href="/index.html">Home</a> / Memberships</div>
+      <h1>Memberships</h1>
+      <p>Find the membership that fits your lifestyle</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Membership Options</span>
+        <h2>Choose Your Plan</h2>
+        <p>{{memberships.intro}}</p>
+      </div>
+
+      <div class="pricing-grid reveal reveal-delay-1">
+        {{#each memberships.plans}}
+        <div class="pricing-card {{#if this.featured}}pricing-card--featured{{/if}}">
+          {{#if this.featured}}
+          <div class="pricing-card__badge">Most Popular</div>
+          {{/if}}
+          <h3>{{this.name}}</h3>
+          <p class="pricing-card__desc">{{this.description}}</p>
+          <ul class="feature-list">
+            {{#each this.highlights}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <a href="/contact.html" class="btn btn--primary">{{this.ctaText}}</a>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="info-box mt-12 text-center reveal" style="max-width: 640px; margin-left: auto; margin-right: auto;">
+        <p class="text-sm">{{memberships.note}}</p>
+      </div>
+    </div>
+  </section>
+
+  {{#if memberships.trialOffer.enabled}}
+  <section class="section section--gray">
+    <div class="container">
+      <div class="trial-banner reveal">
+        <h2>{{memberships.trialOffer.title}}</h2>
+        <p>{{memberships.trialOffer.description}}</p>
+        <a href="/contact.html" class="btn btn--primary btn--lg">{{memberships.trialOffer.buttonText}}</a>
+      </div>
+    </div>
+  </section>
+  {{/if}}
+
+  {{> footer}}
+</body>
+</html>
