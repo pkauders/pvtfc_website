@@ -15,11 +15,11 @@
     "ratingSystem": "We use the National Tennis Rating Program (NTRP) to ensure players are matched with appropriate skill-level groups for lessons and league play.",
     "director": "Gian Pico",
     "images": {
-      "hero": "/assets/images/indoor_courts.webp",
+      "hero": "assets/images/indoor_courts.webp",
       "gallery": [
-        "/assets/images/indoor_courts.webp",
-        "/assets/images/outdoor_courts_with_people.webp",
-        "/assets/images/indoor_courts_with_pickleball_and_people.webp"
+        "assets/images/indoor_courts.webp",
+        "assets/images/outdoor_courts_with_people.webp",
+        "assets/images/indoor_courts_with_pickleball_and_people.webp"
       ]
     }
   },
@@ -96,12 +96,12 @@
     },
     "director": "Anne Mathie",
     "images": {
-      "hero": "/assets/images/fitness_center_wide_shot.webp",
+      "hero": "assets/images/fitness_center_wide_shot.webp",
       "gallery": [
-        "/assets/images/fitness_center_wide_shot.webp",
-        "/assets/images/fitness_center_weights_area.webp",
-        "/assets/images/fitness_center_spin_class.webp",
-        "/assets/images/fitness_center_group_class_room.webp"
+        "assets/images/fitness_center_wide_shot.webp",
+        "assets/images/fitness_center_weights_area.webp",
+        "assets/images/fitness_center_spin_class.webp",
+        "assets/images/fitness_center_group_class_room.webp"
       ]
     }
   },
@@ -122,10 +122,10 @@
     },
     "guestPolicy": "Members may bring guests at guest rates. After 3 guest visits, a membership is required.",
     "images": {
-      "hero": "/assets/images/indoor_courts_with_pickleball_and_people.webp",
+      "hero": "assets/images/indoor_courts_with_pickleball_and_people.webp",
       "gallery": [
-        "/assets/images/indoor_courts_with_pickleball_and_people.webp",
-        "/assets/images/outdoor_courts_with_people.webp"
+        "assets/images/indoor_courts_with_pickleball_and_people.webp",
+        "assets/images/outdoor_courts_with_people.webp"
       ]
     }
   }
