@@ -2,8 +2,10 @@
   "tennis": {
     "title": "Tennis",
     "subtitle": "Programs for Every Player",
-    "description": "Our tennis programs span all ages and skill levels—from youth and juniors to adults. Whether you're picking up a racquet for the first time or competing in league play, we have the programs and pros to keep you in the game.",
+    "description": "With 8 indoor and 5 outdoor courts, our tennis programs span all ages and skill levels—from youth and juniors to adults. Whether you're picking up a racquet for the first time or competing in league play, we have the programs and pros to keep you in the game.",
     "features": [
+      "8 Indoor Courts",
+      "5 Outdoor Courts (Seasonal)",
       "Junior Lessons & Clinics",
       "Adult Lessons & Clinics",
       "Private & Semi-Private Lessons",

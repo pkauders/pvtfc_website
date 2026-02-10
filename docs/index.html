@@ -15,24 +15,53 @@
   <div class="header__inner">
     <a href="index.html" class="header__logo">
       <span class="header__logo-icon">PV</span>
-      Pleasant Valley
+      <span class="header__logo-text">Pleasant Valley<span class="header__logo-sub">Tennis &amp; Fitness Club</span></span>
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav').classList.toggle('nav--open')">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
     <nav class="nav" role="navigation">
       
-      <a href="tennis.html" class="nav__link">Tennis</a>
+      
+      <div class="nav__dropdown">
+        <a href="tennis.html" class="nav__link">Tennis <svg class="nav__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__dropdown-menu">
+          
+          <a href="junior-tennis.html" class="nav__dropdown-link">Junior Tennis</a>
+          
+          <a href="adult-tennis.html" class="nav__dropdown-link">Adult Lessons</a>
+          
+          <a href="private-lessons.html" class="nav__dropdown-link">Private Lessons</a>
+          
+          <a href="court-times.html" class="nav__dropdown-link">Court Times & Rates</a>
+          
+          <a href="summer-camps.html" class="nav__dropdown-link">Summer Camps</a>
+          
+          <a href="tennis-inquiry.html" class="nav__dropdown-link">Tennis Inquiry</a>
+          
+        </div>
+      </div>
+      
+      
       
       <a href="fitness.html" class="nav__link">Fitness</a>
       
+      
+      
       <a href="pickleball.html" class="nav__link">Pickleball</a>
+      
+      
       
       <a href="memberships.html" class="nav__link">Memberships</a>
       
+      
+      
       <a href="amenities.html" class="nav__link">Amenities</a>
       
+      
+      
       <a href="contact.html" class="nav__link">Contact</a>
+      
       
       <a href="memberships.html" class="nav__cta">Join Now</a>
     </nav>
@@ -42,10 +71,15 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero__bg"></div>
-    <div class="hero__float hero__float--1"></div>
-    <div class="hero__float hero__float--2"></div>
-    <div class="hero__float hero__float--3"></div>
+    <div class="hero__slideshow">
+      <img class="hero__slide hero__slide--active" src="assets/images/indoor_courts.webp" alt="">
+      <img class="hero__slide" src="assets/images/fitness_center_wide_shot.webp" alt="">
+      <img class="hero__slide" src="assets/images/outdoor_courts_with_people.webp" alt="">
+      <img class="hero__slide" src="assets/images/indoor_courts_with_pickleball_and_people.webp" alt="">
+      <img class="hero__slide" src="assets/images/lounge_hangout_area.webp" alt="">
+      <img class="hero__slide" src="assets/images/fitness_center_group_class_room.webp" alt="">
+    </div>
+    <div class="hero__overlay"></div>
     <div class="container">
       <div class="hero__content">
         <div class="hero__badge">
@@ -58,19 +92,12 @@
           <a href="memberships.html" class="btn btn--primary btn--lg">Become a Member</a>
           <a href="contact.html" class="btn btn--ghost btn--lg">Schedule a Tour &rarr;</a>
         </div>
-        <div class="hero__stats">
-          <div>
-            <div class="hero__stat-value">6</div>
-            <div class="hero__stat-label">Tennis Courts</div>
-          </div>
-          <div>
-            <div class="hero__stat-value">M-F</div>
-            <div class="hero__stat-label">6 AM &ndash; 10 PM</div>
-          </div>
-          <div>
-            <div class="hero__stat-value">1 Week</div>
-            <div class="hero__stat-label">Free Trial</div>
-          </div>
+        <div class="hero__amenities">
+          <span><em>8</em> Indoor Courts</span>
+          <span><em>5</em> Outdoor Courts</span>
+          <span>Fitness Center</span>
+          <span>Pro Shop</span>
+          <span>Bar &amp; Lounge</span>
         </div>
       </div>
     </div>
@@ -87,45 +114,55 @@
 
       <div class="bento">
         <a href="tennis.html" class="bento-card bento-card--link bento-card--tennis reveal reveal-delay-1">
-          <span class="bento-card__emoji">&#127934;</span>
-          <h3>Tennis</h3>
-          <p>Lessons, leagues, drills, and tournaments for juniors through adults at every skill level.</p>
-          <span class="bento-card__arrow">Explore Tennis &rarr;</span>
+          <div class="bento-card__img"><img src="assets/images/indoor_courts.webp" alt=""></div>
+          <div class="bento-card__body">
+            <h3>Tennis</h3>
+            <p>Lessons, leagues, drills, and tournaments for juniors through adults at every skill level.</p>
+            <span class="bento-card__arrow">Explore Tennis &rarr;</span>
+          </div>
         </a>
 
         <a href="fitness.html" class="bento-card bento-card--link bento-card--fitness reveal reveal-delay-2">
-          <span class="bento-card__emoji">&#127947;&#65039;</span>
-          <h3>Fitness</h3>
-          <p>Cardio, strength, group classes, and personal training to keep you at your best.</p>
-          <span class="bento-card__arrow">Explore Fitness &rarr;</span>
+          <div class="bento-card__img"><img src="assets/images/fitness_center_wide_shot.webp" alt=""></div>
+          <div class="bento-card__body">
+            <h3>Fitness</h3>
+            <p>Cardio, strength, group classes, and personal training to keep you at your best.</p>
+            <span class="bento-card__arrow">Explore Fitness &rarr;</span>
+          </div>
         </a>
 
         <a href="pickleball.html" class="bento-card bento-card--link bento-card--pickleball reveal reveal-delay-3">
-          <span class="bento-card__emoji">&#127955;</span>
-          <h3>Pickleball</h3>
-          <p>Indoor and outdoor courts for the fastest-growing sport. All skill levels welcome.</p>
-          <span class="bento-card__arrow">Explore Pickleball &rarr;</span>
+          <div class="bento-card__img"><img src="assets/images/indoor_courts_with_pickleball_and_people.webp" alt=""></div>
+          <div class="bento-card__body">
+            <h3>Pickleball</h3>
+            <p>Indoor and outdoor courts for the fastest-growing sport. All skill levels welcome.</p>
+            <span class="bento-card__arrow">Explore Pickleball &rarr;</span>
+          </div>
         </a>
 
         <a href="amenities.html" class="bento-card bento-card--link bento-card--social reveal reveal-delay-4">
-          <span class="bento-card__emoji">&#127867;</span>
-          <h3>Social &amp; More</h3>
-          <p>Pro shop, The Final Set bar, birthday parties, and a vibrant member community.</p>
-          <span class="bento-card__arrow">Explore Amenities &rarr;</span>
+          <div class="bento-card__img"><img src="assets/images/lounge_hangout_area.webp" alt=""></div>
+          <div class="bento-card__body">
+            <h3>Social &amp; More</h3>
+            <p>Pro shop, The Final Set bar, birthday parties, and a vibrant member community.</p>
+            <span class="bento-card__arrow">Explore Amenities &rarr;</span>
+          </div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Hours & Quick Info -->
+  <!-- Visit & Info -->
   <section class="section section--gray">
     <div class="container">
-      <div class="two-col">
-        <div class="reveal">
-          <div class="section-header">
-            <span class="section-header__label">Visit Us</span>
-            <h2>Club Hours</h2>
-          </div>
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Visit Us</span>
+        <h2>Plan Your Visit</h2>
+      </div>
+
+      <div class="visit-grid reveal reveal-delay-1">
+        <div class="visit-card">
+          <h3>Club Hours</h3>
           <table class="hours-table">
             
             <tr>
@@ -140,41 +177,39 @@
             
           </table>
           
-          <div class="mt-8">
-            <p class="font-semibold">2754 Pleasant Valley Rd</p>
-            <p class="text-muted">Jackson, WI 53037</p>
-            <p class="mt-4"><a href="tel:(262) 677-3681" class="font-semibold text-primary">(262) 677-3681</a></p>
-          </div>
         </div>
 
-        <div class="reveal reveal-delay-2">
-          <div class="section-header">
-            <span class="section-header__label">Get Started</span>
-            <h2>Try Us Free</h2>
-          </div>
-          <p>Experience everything Pleasant Valley has to offer with a complimentary one-week fitness trial. No commitment, no pressure&mdash;just a great workout.</p>
-          <div class="mt-6">
-            <a href="contact.html" class="btn btn--primary">Start Your Free Trial</a>
-          </div>
-          <hr class="divider">
-          <div class="section-header">
-            <span class="section-header__label">Our Team</span>
-            <h2>Talk to the Right Person</h2>
+        <div class="visit-card">
+          <h3>Location</h3>
+          <p class="visit-card__address">2754 Pleasant Valley Rd<br>Jackson, WI 53037</p>
+          <p class="visit-card__phone phone-link">
+            <a href="tel:2626773681" class="font-semibold text-primary">(262) 677-3681</a>
+            
+            <span class="phone-link__badge">Call or Text</span>
+            
+          </p>
+          <a href="contact.html" class="btn btn--outline-dark mt-6">Contact Us</a>
+        </div>
+
+        <div class="visit-card">
+          <h3>Our Team</h3>
+          
+          <div class="visit-card__team">
+            <span class="visit-card__dept">Tennis & Junior Programs</span>
+            <span class="visit-card__person">Gian Pico</span>
+            <a href="tel:2626747757" class="visit-card__tel">(262) 674-7757</a>
           </div>
           
-          <div class="mb-4">
-            <p class="font-semibold">Tennis & Junior Programs</p>
-            <p class="text-sm text-muted">Gian Pico &middot; <a href="tel:(262) 674-7757">(262) 674-7757</a></p>
+          <div class="visit-card__team">
+            <span class="visit-card__dept">Fitness & Personal Training</span>
+            <span class="visit-card__person">Anne Mathie</span>
+            <a href="tel:2626747740" class="visit-card__tel">(262) 674-7740</a>
           </div>
           
-          <div class="mb-4">
-            <p class="font-semibold">Fitness & Personal Training</p>
-            <p class="text-sm text-muted">Anne Mathie &middot; <a href="tel:(262) 674-7740">(262) 674-7740</a></p>
-          </div>
-          
-          <div class="mb-4">
-            <p class="font-semibold">General Management, Billing & Leagues</p>
-            <p class="text-sm text-muted">Kyle Leisses &middot; <a href="tel:(262) 674-7772">(262) 674-7772</a></p>
+          <div class="visit-card__team">
+            <span class="visit-card__dept">General Management, Billing & Leagues</span>
+            <span class="visit-card__person">Kyle Leisses</span>
+            <a href="tel:2626747772" class="visit-card__tel">(262) 674-7772</a>
           </div>
           
         </div>
@@ -205,14 +240,33 @@
       </div>
       
       <div>
-        <div class="footer__heading">Programs</div>
+        <div class="footer__heading">Tennis</div>
         <ul class="footer__links">
           
-          <li><a href="tennis.html">Tennis</a></li>
+          <li><a href="tennis.html">Tennis Overview</a></li>
+          
+          <li><a href="junior-tennis.html">Junior Tennis</a></li>
+          
+          <li><a href="adult-tennis.html">Adult Lessons</a></li>
+          
+          <li><a href="private-lessons.html">Private Lessons</a></li>
+          
+          <li><a href="court-times.html">Court Times</a></li>
+          
+          <li><a href="summer-camps.html">Summer Camps</a></li>
+          
+        </ul>
+      </div>
+      
+      <div>
+        <div class="footer__heading">Programs</div>
+        <ul class="footer__links">
           
           <li><a href="fitness.html">Fitness</a></li>
           
           <li><a href="pickleball.html">Pickleball</a></li>
+          
+          <li><a href="amenities.html">Amenities</a></li>
           
         </ul>
       </div>
@@ -223,9 +277,9 @@
           
           <li><a href="memberships.html">Memberships</a></li>
           
-          <li><a href="amenities.html">Amenities</a></li>
-          
           <li><a href="contact.html">Contact & Team</a></li>
+          
+          <li><a href="tennis-inquiry.html">Tennis Inquiry</a></li>
           
         </ul>
       </div>

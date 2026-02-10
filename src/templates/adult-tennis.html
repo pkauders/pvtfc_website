@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Adult Tennis Lessons — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/images/indoor_courts.webp" alt="PVTFC Adult Tennis">
+    </div>
+    <div class="container">
+      <span class="page-hero__label">Adult Programs</span>
+      <h1>Adult Lessons</h1>
+      <div class="page-hero__accent"></div>
+      <p>Group sessions, drills, and cardio tennis for every level</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Weekly Programs</span>
+        <h2>Hit the Court</h2>
+        <p>Drop-in sessions and regular programs to keep your game sharp and your fitness on point.</p>
+      </div>
+
+      <div class="adult-programs">
+        {{#each tennis.adultPrograms}}
+        <div class="adult-program-card reveal">
+          <div class="adult-program-card__header">
+            <h3>{{this.name}}</h3>
+            <span class="adult-program-card__level">{{this.level}}</span>
+          </div>
+          <p>{{this.description}}</p>
+          <div class="adult-program-card__details">
+            <div class="adult-program-card__detail">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              {{this.schedule}}
+            </div>
+            <div class="adult-program-card__detail">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg>
+              {{this.signup}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="info-box mt-12 text-center reveal" style="max-width: 640px; margin-left: auto; margin-right: auto;">
+        <div class="info-box__title">League Play</div>
+        <p class="text-sm">Looking for competitive league play? We offer men's, women's, and mixed doubles leagues throughout the year. Contact us for current league schedules and registration.</p>
+        <div class="mt-4">
+          <a href="tennis-inquiry.html" class="btn btn--primary">Tennis Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      <div class="trial-banner reveal">
+        <h2>Want Personalized Coaching?</h2>
+        <p>Our five club professionals offer private and semi-private lessons tailored to your specific goals.</p>
+        <a href="private-lessons.html" class="btn btn--primary btn--lg">Private Lessons</a>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

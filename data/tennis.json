@@ -1,0 +1,193 @@
+{
+  "juniorLevels": [
+    {
+      "name": "Red Ball",
+      "ages": "Ages 4–7",
+      "color": "#ef4444",
+      "description": "Introduction to tennis fundamentals, coordination, and essential elements of the game. Uses small racquets and foam balls on a smaller court to build confidence and love for the sport.",
+      "schedule": "Tue/Thu 5:00–6:00 PM, Sat 10:00–11:00 AM",
+      "skills": ["Hand-eye coordination", "Basic forehand & backhand", "Movement & balance", "Fun games & teamwork"]
+    },
+    {
+      "name": "Green Ball",
+      "ages": "Ages 7–10",
+      "color": "#22c55e",
+      "description": "Focuses on stroke technique and footwork using small to medium racquets with low-pressure balls. Players begin rallying and learning court positioning.",
+      "schedule": "Wed 4:30–5:30 PM, Fri 4:00–5:00 PM, Sat 11:00 AM–12:00 PM",
+      "skills": ["Stroke technique development", "Footwork fundamentals", "Rally consistency", "Introduction to scoring"]
+    },
+    {
+      "name": "Yellow Ball",
+      "ages": "Ages 10+",
+      "color": "#eab308",
+      "description": "Emphasis on tennis fundamentals, stroke technique and development, coordination, and competitive drilling. Players transition to full-court play with regulation balls.",
+      "schedule": "Mon 5:00–6:30 PM, Thu 6:00–7:30 PM, Sat 11:00 AM–12:30 PM",
+      "skills": ["Full-court play", "Serve development", "Competitive drilling", "Match play introduction"]
+    },
+    {
+      "name": "Bronze",
+      "ages": "Ages 14+",
+      "color": "#a16207",
+      "description": "Ideal for beginner high school players building foundational skills. Develops proper technique, consistency, and competitive awareness for school team preparation.",
+      "schedule": "Tue/Wed 7:00–8:30 PM, Sat 1:00–2:30 PM",
+      "skills": ["High school team preparation", "Foundational technique", "Singles & doubles strategy", "Competitive readiness"]
+    },
+    {
+      "name": "Silver",
+      "ages": "Ages 14+ (Pro Staff Approval)",
+      "color": "#9ca3af",
+      "description": "Balance of high-quality instruction, competitive play, and stroke development with emphasis on skill advancement. Requires pro staff approval for placement.",
+      "schedule": "Tue/Wed 7:00–8:30 PM, Sat 1:00–2:30 PM",
+      "skills": ["Advanced stroke development", "Tactical match play", "Tournament preparation", "Mental toughness"]
+    },
+    {
+      "name": "Junior Elite Performance",
+      "ages": "By Approval Only",
+      "color": "#7c3aed",
+      "description": "Advanced program featuring high-impact drills and match play strategy for tournament-level and varsity players. Invitation-only based on pro staff evaluation.",
+      "schedule": "Wed 6:30–8:30 PM",
+      "skills": ["Tournament-level training", "Advanced match strategy", "High-intensity drilling", "Performance analytics"]
+    }
+  ],
+  "adultPrograms": [
+    {
+      "name": "Tennis Aerobics",
+      "description": "Fast-paced drills done to music incorporating all tennis shots. A fun, high-energy workout that improves your game and your fitness at the same time.",
+      "schedule": "Saturdays 7:30–8:30 AM",
+      "level": "All Levels",
+      "signup": "No sign-up required — just show up!"
+    },
+    {
+      "name": "Aerobics & Play",
+      "description": "Combines cardio tennis drills with open play time. Get a great workout then put your skills to the test in live points.",
+      "schedule": "Fridays 8:00–9:30 AM",
+      "level": "All Levels",
+      "signup": "Drop-in welcome"
+    },
+    {
+      "name": "Open Drill 3.0+",
+      "description": "Designed for intermediate players seeking consistent weekday practice opportunities. Work on all aspects of your game in a structured but relaxed environment.",
+      "schedule": "Saturdays 8:30–10:00 AM",
+      "level": "NTRP 3.0+",
+      "signup": "Drop-in welcome"
+    },
+    {
+      "name": "Open Drill 4.0+",
+      "description": "Competitive drills for advanced players preparing for league and tournament play. High-intensity point play and match-situation scenarios.",
+      "schedule": "Saturdays 8:30–10:00 AM",
+      "level": "NTRP 4.0+",
+      "signup": "Drop-in welcome"
+    }
+  ],
+  "privateLessons": {
+    "description": "One-on-one and small group instruction tailored to your goals. Whether you're picking up a racquet for the first time or fine-tuning your game for competition, our pros will create a personalized plan.",
+    "formats": [
+      {"name": "Private Lesson", "players": "1 player", "description": "Focused one-on-one instruction with a club professional."},
+      {"name": "Semi-Private", "players": "2 players", "description": "Share a lesson with a partner at a similar skill level."},
+      {"name": "Small Group", "players": "3+ players", "description": "Group instruction for friends, families, or teams."}
+    ],
+    "instructors": [
+      {"name": "Kyle Leisses", "title": "General Manager / Instructor"},
+      {"name": "Jake Stockhausen", "title": "Tennis Professional"},
+      {"name": "Steve Petrinski", "title": "Tennis Professional"},
+      {"name": "Ted Weller", "title": "Tennis Professional"},
+      {"name": "Steve Sprinkmann", "title": "Tennis Professional"}
+    ],
+    "note": "Lessons available for both members and non-members. Contact us to schedule at a time that works for you."
+  },
+  "courtTimes": {
+    "primeRate": "$34/hour per court",
+    "primeBooking": "Reserve up to 2 weeks in advance",
+    "nonPrimeRate": "$15/hour per court",
+    "nonPrimeBooking": "Reserve up to 24 hours in advance",
+    "freeNote": "Select off-peak outdoor slots are available at no charge",
+    "indoorSeason": "September – May (38 weeks)",
+    "permanentReservation": "Reserve the same court at the same time every week for the entire 38-week indoor season. Contact the front desk for eligibility and conditions.",
+    "regularSchedule": [
+      {"days": "Monday – Friday", "prime": "8:30 AM – 3:00 PM", "nonPrime": "6:00–8:30 AM, 3:00–10:00 PM"},
+      {"days": "Saturday", "prime": "8:00 AM – 3:00 PM", "nonPrime": "7:00–8:00 AM, 3:00–6:00 PM"},
+      {"days": "Sunday", "prime": "8:00 AM – 3:00 PM", "nonPrime": "7:00–8:00 AM, 3:00–6:00 PM"}
+    ],
+    "summerSchedule": [
+      {"days": "Monday – Friday", "prime": "8:30 AM – 12:00 PM", "nonPrime": "6:00–8:30 AM, 12:00–2:00 PM"},
+      {"days": "Saturday", "prime": "8:00 AM – 12:00 PM", "nonPrime": "7:00–8:00 AM, 3:00–6:00 PM"},
+      {"days": "Sunday", "prime": "8:00 AM – 12:00 PM", "nonPrime": "7:00–8:00 AM, 3:00–6:00 PM"}
+    ]
+  },
+  "summerCamps": {
+    "intro": "Our summer tennis camps are the perfect way for kids to stay active, make friends, and develop their tennis skills in a fun, supportive environment. Camps run weekly from mid-June through early August.",
+    "camps": [
+      {
+        "name": "Little Aces Camp",
+        "ages": "Ages 4–6",
+        "type": "Half Day",
+        "time": "9:00 AM – 12:00 PM",
+        "price": "$175/week",
+        "description": "A gentle introduction to tennis through games, mini-court play, and coordination activities. Perfect for first-timers who want to have fun and burn energy.",
+        "includes": ["Foam ball tennis games", "Coordination & agility activities", "Snack break", "Friday mini-tournament & prizes"]
+      },
+      {
+        "name": "Rally Stars Camp",
+        "ages": "Ages 7–10",
+        "type": "Half Day",
+        "time": "9:00 AM – 12:00 PM",
+        "price": "$195/week",
+        "description": "Build real tennis skills in a high-energy camp focused on stroke development, footwork, and friendly competition.",
+        "includes": ["Stroke technique clinics", "Footwork & movement drills", "Match play & games", "Snack break", "Friday tournament & awards"]
+      },
+      {
+        "name": "Tournament Prep Camp",
+        "ages": "Ages 10–14",
+        "type": "Full Day",
+        "time": "9:00 AM – 3:00 PM",
+        "price": "$325/week",
+        "description": "Intensive training for competitive junior players. Morning sessions focus on technical development; afternoons feature match play, strategy, and fitness.",
+        "includes": ["Morning technical clinics", "Afternoon match play", "Video analysis sessions", "Fitness & conditioning", "Lunch break (bring your own)", "Friday round-robin tournament"]
+      },
+      {
+        "name": "High School Prep Camp",
+        "ages": "Ages 14–18",
+        "type": "Full Day",
+        "time": "9:00 AM – 3:00 PM",
+        "price": "$350/week",
+        "description": "Designed for players preparing for high school team tryouts and competition. Advanced drills, singles and doubles strategy, and mental toughness training.",
+        "includes": ["Advanced stroke refinement", "Singles & doubles strategy", "Competitive match play", "Fitness & conditioning", "Mental game workshops", "Friday challenge matches"]
+      }
+    ],
+    "weeks": [
+      {"week": "Week 1", "dates": "June 16–20"},
+      {"week": "Week 2", "dates": "June 23–27"},
+      {"week": "Week 3", "dates": "June 30–July 3"},
+      {"week": "Week 4", "dates": "July 7–11"},
+      {"week": "Week 5", "dates": "July 14–18"},
+      {"week": "Week 6", "dates": "July 21–25"},
+      {"week": "Week 7", "dates": "July 28–Aug 1"},
+      {"week": "Week 8", "dates": "Aug 4–8"}
+    ],
+    "whatToBring": ["Tennis racquet (loaners available)", "Athletic shoes (court shoes preferred)", "Water bottle", "Sunscreen & hat for outdoor sessions", "Lunch for full-day camps", "Positive attitude!"],
+    "policies": ["Register for individual weeks or the full summer", "Sibling discount: 10% off second child", "Early bird discount before May 1st", "Full refund if cancelled 7+ days before camp week", "50% refund for cancellations within 7 days"],
+    "contact": "Gian Pico, Tennis Director"
+  },
+  "inquiryForm": {
+    "programs": [
+      "Junior Lessons (Red Ball, Ages 4–7)",
+      "Junior Lessons (Green Ball, Ages 7–10)",
+      "Junior Lessons (Yellow Ball, Ages 10+)",
+      "Junior Lessons (Bronze/Silver, Ages 14+)",
+      "Junior Elite Performance",
+      "Adult Lessons & Drills",
+      "Private Lessons",
+      "Summer Camp",
+      "League Play",
+      "Court Reservations",
+      "General Tennis Inquiry"
+    ],
+    "skillLevels": [
+      "Beginner (never played)",
+      "Beginner (some experience)",
+      "Intermediate (NTRP 2.5–3.5)",
+      "Advanced (NTRP 4.0+)",
+      "Not sure / need evaluation"
+    ]
+  }
+}

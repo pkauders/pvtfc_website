@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pleasant Valley Tennis & Fitness Club in Jackson, WI offers tennis, pickleball, fitness training, and community amenities for all ages and skill levels.">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/main.js" defer></script>
+
+  <title>Tennis Inquiry — Pleasant Valley Tennis & Fitness Club</title>
+</head>
+<body>
+  
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <span class="header__logo-icon">PV</span>
+      <span class="header__logo-text">Pleasant Valley<span class="header__logo-sub">Tennis &amp; Fitness Club</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav').classList.toggle('nav--open')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="nav" role="navigation">
+      
+      
+      <div class="nav__dropdown">
+        <a href="tennis.html" class="nav__link">Tennis <svg class="nav__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__dropdown-menu">
+          
+          <a href="junior-tennis.html" class="nav__dropdown-link">Junior Tennis</a>
+          
+          <a href="adult-tennis.html" class="nav__dropdown-link">Adult Lessons</a>
+          
+          <a href="private-lessons.html" class="nav__dropdown-link">Private Lessons</a>
+          
+          <a href="court-times.html" class="nav__dropdown-link">Court Times & Rates</a>
+          
+          <a href="summer-camps.html" class="nav__dropdown-link">Summer Camps</a>
+          
+          <a href="tennis-inquiry.html" class="nav__dropdown-link">Tennis Inquiry</a>
+          
+        </div>
+      </div>
+      
+      
+      
+      <a href="fitness.html" class="nav__link">Fitness</a>
+      
+      
+      
+      <a href="pickleball.html" class="nav__link">Pickleball</a>
+      
+      
+      
+      <a href="memberships.html" class="nav__link">Memberships</a>
+      
+      
+      
+      <a href="amenities.html" class="nav__link">Amenities</a>
+      
+      
+      
+      <a href="contact.html" class="nav__link">Contact</a>
+      
+      
+      <a href="memberships.html" class="nav__cta">Join Now</a>
+    </nav>
+  </div>
+</header>
+
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/images/indoor_courts.webp" alt="PVTFC Tennis Inquiry">
+    </div>
+    <div class="container">
+      <span class="page-hero__label">Get Started</span>
+      <h1>Tennis Inquiry</h1>
+      <div class="page-hero__accent"></div>
+      <p>Tell us about yourself and we'll find the right program</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="inquiry-layout">
+        <div class="reveal">
+          <div class="section-header">
+            <span class="section-header__label">Inquiry Form</span>
+            <h2>Let's Get You Started</h2>
+          </div>
+          <p class="text-muted mb-8">Fill out the form below and our tennis staff will reach out within one business day to discuss your options.</p>
+
+          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="program">Program Interest</label>
+                <select id="program" name="program" required>
+                  <option value="">Select a program...</option>
+                  
+                  <option value="Junior Lessons (Red Ball, Ages 4–7)">Junior Lessons (Red Ball, Ages 4–7)</option>
+                  
+                  <option value="Junior Lessons (Green Ball, Ages 7–10)">Junior Lessons (Green Ball, Ages 7–10)</option>
+                  
+                  <option value="Junior Lessons (Yellow Ball, Ages 10+)">Junior Lessons (Yellow Ball, Ages 10+)</option>
+                  
+                  <option value="Junior Lessons (Bronze/Silver, Ages 14+)">Junior Lessons (Bronze/Silver, Ages 14+)</option>
+                  
+                  <option value="Junior Elite Performance">Junior Elite Performance</option>
+                  
+                  <option value="Adult Lessons & Drills">Adult Lessons & Drills</option>
+                  
+                  <option value="Private Lessons">Private Lessons</option>
+                  
+                  <option value="Summer Camp">Summer Camp</option>
+                  
+                  <option value="League Play">League Play</option>
+                  
+                  <option value="Court Reservations">Court Reservations</option>
+                  
+                  <option value="General Tennis Inquiry">General Tennis Inquiry</option>
+                  
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="playerAge">Player Age</label>
+                <input type="number" id="playerAge" name="playerAge" min="3" max="99" placeholder="Age of player">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="skillLevel">Current Skill Level</label>
+              <select id="skillLevel" name="skillLevel">
+                <option value="">Select skill level...</option>
+                
+                <option value="Beginner (never played)">Beginner (never played)</option>
+                
+                <option value="Beginner (some experience)">Beginner (some experience)</option>
+                
+                <option value="Intermediate (NTRP 2.5–3.5)">Intermediate (NTRP 2.5–3.5)</option>
+                
+                <option value="Advanced (NTRP 4.0+)">Advanced (NTRP 4.0+)</option>
+                
+                <option value="Not sure / need evaluation">Not sure / need evaluation</option>
+                
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details (optional)</label>
+              <textarea id="message" name="message" placeholder="Tell us about your goals, scheduling preferences, or any questions you have..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-checkbox">
+                <input type="checkbox" name="isMember" value="yes">
+                <span>I am currently a PVTFC member</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary">Submit Inquiry</button>
+          </form>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="inquiry-sidebar">
+            <div class="info-box" style="background: rgba(16,185,129,0.04); border-color: rgba(16,185,129,0.15);">
+              <div class="info-box__title">Prefer to Call?</div>
+              <p class="text-sm mb-4">Our tennis staff is happy to answer any questions over the phone.</p>
+              <p class="phone-link">
+                <a href="tel:2626773681" class="font-semibold text-primary">(262) 677-3681</a>
+                <span class="phone-link__badge">Call or Text</span>
+              </p>
+            </div>
+
+            <div class="info-box mt-6">
+              <div class="info-box__title">Quick Links</div>
+              <ul class="inquiry-links">
+                <li><a href="junior-tennis.html">Junior Tennis Levels</a></li>
+                <li><a href="adult-tennis.html">Adult Lessons</a></li>
+                <li><a href="private-lessons.html">Private Lessons</a></li>
+                <li><a href="court-times.html">Court Times & Rates</a></li>
+                <li><a href="summer-camps.html">Summer Camps</a></li>
+                <li><a href="memberships.html">Membership Info</a></li>
+              </ul>
+            </div>
+
+            <div class="info-box mt-6">
+              <div class="info-box__title">Tennis Director</div>
+              <p class="font-semibold">Gian Pico</p>
+              <p class="text-sm text-muted">Oversees all tennis programming including junior and adult lessons, leagues, and tournaments.</p>
+              <p class="text-sm mt-2"><a href="mailto:gian@pvtfc.com">gian@pvtfc.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">Pleasant Valley Tennis &amp; Fitness Club</div>
+        <p class="footer__desc">Pleasant Valley Tennis & Fitness Club in Jackson, WI offers tennis, pickleball, fitness training, and community amenities for all ages and skill levels.</p>
+        <p class="text-sm">2754 Pleasant Valley Rd<br>Jackson, WI 53037</p>
+      </div>
+      
+      <div>
+        <div class="footer__heading">Tennis</div>
+        <ul class="footer__links">
+          
+          <li><a href="tennis.html">Tennis Overview</a></li>
+          
+          <li><a href="junior-tennis.html">Junior Tennis</a></li>
+          
+          <li><a href="adult-tennis.html">Adult Lessons</a></li>
+          
+          <li><a href="private-lessons.html">Private Lessons</a></li>
+          
+          <li><a href="court-times.html">Court Times</a></li>
+          
+          <li><a href="summer-camps.html">Summer Camps</a></li>
+          
+        </ul>
+      </div>
+      
+      <div>
+        <div class="footer__heading">Programs</div>
+        <ul class="footer__links">
+          
+          <li><a href="fitness.html">Fitness</a></li>
+          
+          <li><a href="pickleball.html">Pickleball</a></li>
+          
+          <li><a href="amenities.html">Amenities</a></li>
+          
+        </ul>
+      </div>
+      
+      <div>
+        <div class="footer__heading">Club</div>
+        <ul class="footer__links">
+          
+          <li><a href="memberships.html">Memberships</a></li>
+          
+          <li><a href="contact.html">Contact & Team</a></li>
+          
+          <li><a href="tennis-inquiry.html">Tennis Inquiry</a></li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 Pleasant Valley Tennis &amp; Fitness Club. All rights reserved.</span>
+      <div class="footer__contact-info">
+        <a href="tel:(262) 677-3681">(262) 677-3681</a>
+        <a href="mailto:info@pvtfc.com">info@pvtfc.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

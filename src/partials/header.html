@@ -10,14 +10,25 @@
   <div class="header__inner">
     <a href="index.html" class="header__logo">
       <span class="header__logo-icon">PV</span>
-      Pleasant Valley
+      <span class="header__logo-text">Pleasant Valley<span class="header__logo-sub">Tennis &amp; Fitness Club</span></span>
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav').classList.toggle('nav--open')">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
     <nav class="nav" role="navigation">
       {{#each navigation.main}}
+      {{#if this.hasDropdown}}
+      <div class="nav__dropdown">
+        <a href="{{this.href}}" class="nav__link">{{this.label}} <svg class="nav__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__dropdown-menu">
+          {{#each this.children}}
+          <a href="{{this.href}}" class="nav__dropdown-link">{{this.label}}</a>
+          {{/each}}
+        </div>
+      </div>
+      {{else}}
       <a href="{{this.href}}" class="nav__link">{{this.label}}</a>
+      {{/if}}
       {{/each}}
       <a href="memberships.html" class="nav__cta">Join Now</a>
     </nav>

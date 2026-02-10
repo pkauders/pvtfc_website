@@ -12,66 +12,119 @@
       <img src="{{services.tennis.images.hero}}" alt="PVTFC Tennis Courts">
     </div>
     <div class="container">
-      <div class="page-hero__breadcrumb"><a href="index.html">Home</a> / Tennis</div>
-      <h1>{{services.tennis.title}}</h1>
-      <p>{{services.tennis.subtitle}}</p>
+      <span class="page-hero__label">Programs</span>
+      <h1>Tennis</h1>
+      <div class="page-hero__accent"></div>
+      <p>Programs for every player, every age, every level</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="two-col">
-        <div class="reveal">
-          <div class="section-header">
-            <span class="section-header__label">Overview</span>
-            <h2>Programs for Every Player</h2>
-          </div>
-          <p>{{services.tennis.description}}</p>
-          <div class="mt-6">
-            <div class="info-box">
-              <div class="info-box__title">Rating System</div>
-              <p class="text-sm">{{services.tennis.ratingSystem}}</p>
-            </div>
-          </div>
-          <div class="mt-6">
-            <p class="text-sm text-muted">Questions about tennis programs?</p>
-            <p class="font-semibold">Contact {{services.tennis.director}}</p>
-            <p class="phone-link mt-2">
-              <a href="tel:{{staff.mainLine.phonePlain}}">{{staff.mainLine.phone}}</a>
-              <span class="phone-link__badge">Call or Text</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="reveal reveal-delay-2">
-          <div class="section-header">
-            <span class="section-header__label">Programs</span>
-            <h2>What We Offer</h2>
-          </div>
-          <ul class="feature-list">
-            {{#each services.tennis.features}}
-            <li>{{this}}</li>
-            {{/each}}
-          </ul>
-        </div>
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Overview</span>
+        <h2>Your Home Court</h2>
+        <p>{{services.tennis.description}}</p>
       </div>
 
-      <div class="image-gallery mt-12 reveal reveal-delay-3">
-        {{#each services.tennis.images.gallery}}
-        <div class="image-gallery__item">
-          <img src="{{this}}" alt="PVTFC Tennis" loading="lazy">
-        </div>
-        {{/each}}
+      <div class="program-grid reveal reveal-delay-1">
+        <a href="junior-tennis.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Junior Tennis</h3>
+          <p>Six levels from Red Ball (ages 4+) through Elite Performance. Building champions at every stage.</p>
+          <span class="program-card__link">View Programs &rarr;</span>
+        </a>
+
+        <a href="adult-tennis.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Adult Lessons</h3>
+          <p>Tennis Aerobics, open drills, and group sessions for all skill levels. Drop-in or register.</p>
+          <span class="program-card__link">View Programs &rarr;</span>
+        </a>
+
+        <a href="private-lessons.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Private Lessons</h3>
+          <p>One-on-one and small group instruction with five experienced club professionals.</p>
+          <span class="program-card__link">View Details &rarr;</span>
+        </a>
+
+        <a href="court-times.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Court Times & Rates</h3>
+          <p>8 indoor and 5 outdoor courts. Prime and non-prime rates, permanent reservations available.</p>
+          <span class="program-card__link">View Rates &rarr;</span>
+        </a>
+
+        <a href="summer-camps.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </div>
+          <h3>Summer Camps</h3>
+          <p>Weekly camps from June through August. Half-day and full-day options for ages 4–18.</p>
+          <span class="program-card__link">View Camps &rarr;</span>
+        </a>
+
+        <a href="tennis-inquiry.html" class="program-card program-card--cta">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Tennis Inquiry</h3>
+          <p>Not sure where to start? Fill out our inquiry form and we'll help you find the right program.</p>
+          <span class="program-card__link">Start Inquiry &rarr;</span>
+        </a>
       </div>
     </div>
   </section>
 
   <section class="section section--gray">
     <div class="container">
+      <div class="two-col reveal">
+        <div>
+          <div class="section-header">
+            <span class="section-header__label">Our Facilities</span>
+            <h2>World-Class Courts</h2>
+          </div>
+          <ul class="feature-list">
+            {{#each services.tennis.features}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <div class="info-box mt-8">
+            <div class="info-box__title">Rating System</div>
+            <p class="text-sm">{{services.tennis.ratingSystem}}</p>
+          </div>
+        </div>
+        <div>
+          <div class="image-gallery">
+            {{#each services.tennis.images.gallery}}
+            <div class="image-gallery__item">
+              <img src="{{this}}" alt="PVTFC Tennis" loading="lazy">
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
       <div class="trial-banner reveal">
         <h2>Ready to Hit the Court?</h2>
-        <p>Whether you're a beginner or a seasoned player, we have a program for you. Contact us to learn about upcoming sessions and league play.</p>
-        <a href="contact.html" class="btn btn--primary btn--lg">Contact Us</a>
+        <p>Whether you're a beginner or a seasoned player, we have a program for you. Fill out our tennis inquiry and we'll match you with the perfect program.</p>
+        <div>
+          <a href="tennis-inquiry.html" class="btn btn--primary btn--lg">Tennis Inquiry</a>
+          <a href="contact.html" class="btn btn--ghost btn--lg" style="color: rgba(255,255,255,0.8);">Contact Us</a>
+        </div>
       </div>
     </div>
   </section>

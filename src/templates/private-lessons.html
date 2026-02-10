@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Private Tennis Lessons — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/images/indoor_courts.webp" alt="PVTFC Private Lessons">
+    </div>
+    <div class="container">
+      <span class="page-hero__label">Private Coaching</span>
+      <h1>Private Lessons</h1>
+      <div class="page-hero__accent"></div>
+      <p>Personalized instruction from our experienced professionals</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div class="section-header">
+            <span class="section-header__label">Overview</span>
+            <h2>Your Game, Your Goals</h2>
+          </div>
+          <p>{{tennis.privateLessons.description}}</p>
+
+          <div class="mt-8">
+            <div class="section-header">
+              <span class="section-header__label">Lesson Formats</span>
+              <h2>Choose Your Format</h2>
+            </div>
+            {{#each tennis.privateLessons.formats}}
+            <div class="format-card">
+              <div class="format-card__header">
+                <h4>{{this.name}}</h4>
+                <span class="format-card__players">{{this.players}}</span>
+              </div>
+              <p class="text-sm text-muted">{{this.description}}</p>
+            </div>
+            {{/each}}
+          </div>
+
+          <div class="info-box mt-8">
+            <div class="info-box__title">Please Note</div>
+            <p class="text-sm">{{tennis.privateLessons.note}}</p>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="section-header">
+            <span class="section-header__label">Our Pros</span>
+            <h2>Meet the Team</h2>
+          </div>
+          <div class="instructor-list">
+            {{#each tennis.privateLessons.instructors}}
+            <div class="instructor-card">
+              <div class="instructor-card__avatar">{{this.name}}</div>
+              <div>
+                <div class="instructor-card__name">{{this.name}}</div>
+                <div class="instructor-card__title">{{this.title}}</div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+
+          <div class="mt-8">
+            <div class="info-box" style="background: rgba(16,185,129,0.04); border-color: rgba(16,185,129,0.15);">
+              <div class="info-box__title">Schedule a Lesson</div>
+              <p class="text-sm mb-4">Contact us to book your lesson at a time that works for you.</p>
+              <p class="phone-link">
+                <a href="tel:{{staff.mainLine.phonePlain}}" class="font-semibold text-primary">{{staff.mainLine.phone}}</a>
+                <span class="phone-link__badge">Call or Text</span>
+              </p>
+              <a href="tennis-inquiry.html" class="btn btn--primary mt-4">Tennis Inquiry</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

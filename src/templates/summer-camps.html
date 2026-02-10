@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Summer Tennis Camps — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/images/outdoor_courts_with_people.webp" alt="PVTFC Summer Camps">
+    </div>
+    <div class="container">
+      <span class="page-hero__label">Summer 2025</span>
+      <h1>Summer Camps</h1>
+      <div class="page-hero__accent"></div>
+      <p>Weekly tennis camps for ages 4–18, June through August</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Overview</span>
+        <h2>A Summer on the Courts</h2>
+        <p>{{tennis.summerCamps.intro}}</p>
+      </div>
+
+      <div class="camp-grid">
+        {{#each tennis.summerCamps.camps}}
+        <div class="camp-card reveal">
+          <div class="camp-card__header">
+            <div>
+              <h3>{{this.name}}</h3>
+              <span class="camp-card__ages">{{this.ages}}</span>
+            </div>
+            <div class="camp-card__price">{{this.price}}</div>
+          </div>
+          <div class="camp-card__meta">
+            <span class="camp-card__type">{{this.type}}</span>
+            <span class="camp-card__time">{{this.time}}</span>
+          </div>
+          <p class="camp-card__desc">{{this.description}}</p>
+          <h4 class="camp-card__includes-title">What's Included</h4>
+          <ul class="camp-card__includes">
+            {{#each this.includes}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <a href="tennis-inquiry.html" class="btn btn--outline-dark mt-4">Register Interest</a>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div class="section-header">
+            <span class="section-header__label">Schedule</span>
+            <h2>Camp Weeks</h2>
+          </div>
+          <p class="text-muted mb-6">Camps run Monday through Friday. Register for individual weeks or the full summer.</p>
+          <table class="hours-table">
+            {{#each tennis.summerCamps.weeks}}
+            <tr>
+              <td>{{this.week}}</td>
+              <td>{{this.dates}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="section-header">
+            <span class="section-header__label">Prepare</span>
+            <h2>What to Bring</h2>
+          </div>
+          <ul class="feature-list">
+            {{#each tennis.summerCamps.whatToBring}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+
+          <div class="info-box mt-8">
+            <div class="info-box__title">Policies & Discounts</div>
+            <ul class="feature-list">
+              {{#each tennis.summerCamps.policies}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="trial-banner reveal">
+        <h2>Reserve Your Spot</h2>
+        <p>Camps fill up fast! Fill out our inquiry form or call us to register your child for the best summer ever.</p>
+        <div>
+          <a href="tennis-inquiry.html" class="btn btn--primary btn--lg">Tennis Inquiry</a>
+        </div>
+        <p class="phone-link mt-4" style="justify-content: center;">
+          <a href="tel:{{staff.mainLine.phonePlain}}" style="color: rgba(255,255,255,0.9); font-weight: 600;">{{staff.mainLine.phone}}</a>
+          <span class="phone-link__badge">Call or Text</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

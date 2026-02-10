@@ -16,6 +16,17 @@
     });
   });
 
+  // Hero slideshow crossfade
+  var slides = document.querySelectorAll('.hero__slide');
+  if (slides.length > 1) {
+    var current = 0;
+    setInterval(function() {
+      slides[current].classList.remove('hero__slide--active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('hero__slide--active');
+    }, 5000);
+  }
+
   // Class schedule — week-based pager with real dates
   const scheduleEl = document.getElementById('classSchedule');
   const dataEl = document.getElementById('classScheduleData');

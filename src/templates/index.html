@@ -9,10 +9,15 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero__bg"></div>
-    <div class="hero__float hero__float--1"></div>
-    <div class="hero__float hero__float--2"></div>
-    <div class="hero__float hero__float--3"></div>
+    <div class="hero__slideshow">
+      <img class="hero__slide hero__slide--active" src="assets/images/indoor_courts.webp" alt="">
+      <img class="hero__slide" src="assets/images/fitness_center_wide_shot.webp" alt="">
+      <img class="hero__slide" src="assets/images/outdoor_courts_with_people.webp" alt="">
+      <img class="hero__slide" src="assets/images/indoor_courts_with_pickleball_and_people.webp" alt="">
+      <img class="hero__slide" src="assets/images/lounge_hangout_area.webp" alt="">
+      <img class="hero__slide" src="assets/images/fitness_center_group_class_room.webp" alt="">
+    </div>
+    <div class="hero__overlay"></div>
     <div class="container">
       <div class="hero__content">
         <div class="hero__badge">
@@ -25,19 +30,12 @@
           <a href="memberships.html" class="btn btn--primary btn--lg">Become a Member</a>
           <a href="contact.html" class="btn btn--ghost btn--lg">Schedule a Tour &rarr;</a>
         </div>
-        <div class="hero__stats">
-          <div>
-            <div class="hero__stat-value">6</div>
-            <div class="hero__stat-label">Tennis Courts</div>
-          </div>
-          <div>
-            <div class="hero__stat-value">M-F</div>
-            <div class="hero__stat-label">6 AM &ndash; 10 PM</div>
-          </div>
-          <div>
-            <div class="hero__stat-value">1 Week</div>
-            <div class="hero__stat-label">Free Trial</div>
-          </div>
+        <div class="hero__amenities">
+          <span><em>8</em> Indoor Courts</span>
+          <span><em>5</em> Outdoor Courts</span>
+          <span>Fitness Center</span>
+          <span>Pro Shop</span>
+          <span>Bar &amp; Lounge</span>
         </div>
       </div>
     </div>
@@ -54,45 +52,55 @@
 
       <div class="bento">
         <a href="tennis.html" class="bento-card bento-card--link bento-card--tennis reveal reveal-delay-1">
-          <span class="bento-card__emoji">&#127934;</span>
-          <h3>Tennis</h3>
-          <p>Lessons, leagues, drills, and tournaments for juniors through adults at every skill level.</p>
-          <span class="bento-card__arrow">Explore Tennis &rarr;</span>
+          <div class="bento-card__img"><img src="assets/images/indoor_courts.webp" alt=""></div>
+          <div class="bento-card__body">
+            <h3>Tennis</h3>
+            <p>Lessons, leagues, drills, and tournaments for juniors through adults at every skill level.</p>
+            <span class="bento-card__arrow">Explore Tennis &rarr;</span>
+          </div>
         </a>
 
         <a href="fitness.html" class="bento-card bento-card--link bento-card--fitness reveal reveal-delay-2">
-          <span class="bento-card__emoji">&#127947;&#65039;</span>
-          <h3>Fitness</h3>
-          <p>Cardio, strength, group classes, and personal training to keep you at your best.</p>
-          <span class="bento-card__arrow">Explore Fitness &rarr;</span>
+          <div class="bento-card__img"><img src="assets/images/fitness_center_wide_shot.webp" alt=""></div>
+          <div class="bento-card__body">
+            <h3>Fitness</h3>
+            <p>Cardio, strength, group classes, and personal training to keep you at your best.</p>
+            <span class="bento-card__arrow">Explore Fitness &rarr;</span>
+          </div>
         </a>
 
         <a href="pickleball.html" class="bento-card bento-card--link bento-card--pickleball reveal reveal-delay-3">
-          <span class="bento-card__emoji">&#127955;</span>
-          <h3>Pickleball</h3>
-          <p>Indoor and outdoor courts for the fastest-growing sport. All skill levels welcome.</p>
-          <span class="bento-card__arrow">Explore Pickleball &rarr;</span>
+          <div class="bento-card__img"><img src="assets/images/indoor_courts_with_pickleball_and_people.webp" alt=""></div>
+          <div class="bento-card__body">
+            <h3>Pickleball</h3>
+            <p>Indoor and outdoor courts for the fastest-growing sport. All skill levels welcome.</p>
+            <span class="bento-card__arrow">Explore Pickleball &rarr;</span>
+          </div>
         </a>
 
         <a href="amenities.html" class="bento-card bento-card--link bento-card--social reveal reveal-delay-4">
-          <span class="bento-card__emoji">&#127867;</span>
-          <h3>Social &amp; More</h3>
-          <p>Pro shop, The Final Set bar, birthday parties, and a vibrant member community.</p>
-          <span class="bento-card__arrow">Explore Amenities &rarr;</span>
+          <div class="bento-card__img"><img src="assets/images/lounge_hangout_area.webp" alt=""></div>
+          <div class="bento-card__body">
+            <h3>Social &amp; More</h3>
+            <p>Pro shop, The Final Set bar, birthday parties, and a vibrant member community.</p>
+            <span class="bento-card__arrow">Explore Amenities &rarr;</span>
+          </div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Hours & Quick Info -->
+  <!-- Visit & Info -->
   <section class="section section--gray">
     <div class="container">
-      <div class="two-col">
-        <div class="reveal">
-          <div class="section-header">
-            <span class="section-header__label">Visit Us</span>
-            <h2>Club Hours</h2>
-          </div>
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Visit Us</span>
+        <h2>Plan Your Visit</h2>
+      </div>
+
+      <div class="visit-grid reveal reveal-delay-1">
+        <div class="visit-card">
+          <h3>Club Hours</h3>
           <table class="hours-table">
             {{#each hours.clubHours}}
             <tr>
@@ -104,31 +112,27 @@
           {{#if hours.holidayNotice}}
           <p class="text-sm text-muted mt-4">{{hours.holidayNotice}}</p>
           {{/if}}
-          <div class="mt-8">
-            <p class="font-semibold">{{site.address.street}}</p>
-            <p class="text-muted">{{site.address.city}}, {{site.address.state}} {{site.address.zip}}</p>
-            <p class="mt-4"><a href="tel:{{site.phone}}" class="font-semibold text-primary">{{site.phone}}</a></p>
-          </div>
         </div>
 
-        <div class="reveal reveal-delay-2">
-          <div class="section-header">
-            <span class="section-header__label">Get Started</span>
-            <h2>Try Us Free</h2>
-          </div>
-          <p>Experience everything Pleasant Valley has to offer with a complimentary one-week fitness trial. No commitment, no pressure&mdash;just a great workout.</p>
-          <div class="mt-6">
-            <a href="contact.html" class="btn btn--primary">Start Your Free Trial</a>
-          </div>
-          <hr class="divider">
-          <div class="section-header">
-            <span class="section-header__label">Our Team</span>
-            <h2>Talk to the Right Person</h2>
-          </div>
+        <div class="visit-card">
+          <h3>Location</h3>
+          <p class="visit-card__address">{{site.address.street}}<br>{{site.address.city}}, {{site.address.state}} {{site.address.zip}}</p>
+          <p class="visit-card__phone phone-link">
+            <a href="tel:{{site.phonePlain}}" class="font-semibold text-primary">{{site.phone}}</a>
+            {{#if site.supportsText}}
+            <span class="phone-link__badge">Call or Text</span>
+            {{/if}}
+          </p>
+          <a href="contact.html" class="btn btn--outline-dark mt-6">Contact Us</a>
+        </div>
+
+        <div class="visit-card">
+          <h3>Our Team</h3>
           {{#each staff.departments}}
-          <div class="mb-4">
-            <p class="font-semibold">{{this.name}}</p>
-            <p class="text-sm text-muted">{{this.contact}} &middot; <a href="tel:{{this.phone}}">{{this.phone}}</a></p>
+          <div class="visit-card__team">
+            <span class="visit-card__dept">{{this.name}}</span>
+            <span class="visit-card__person">{{this.contact}}</span>
+            <a href="tel:{{this.phonePlain}}" class="visit-card__tel">{{this.phone}}</a>
           </div>
           {{/each}}
         </div>

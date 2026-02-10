@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Court Times &amp; Rates — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/images/indoor_courts.webp" alt="PVTFC Tennis Courts">
+    </div>
+    <div class="container">
+      <span class="page-hero__label">Scheduling</span>
+      <h1>Court Times &amp; Rates</h1>
+      <div class="page-hero__accent"></div>
+      <p>8 indoor courts, 5 outdoor courts, flexible booking</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Pricing</span>
+        <h2>Court Rates</h2>
+      </div>
+
+      <div class="rate-cards reveal reveal-delay-1">
+        <div class="rate-card rate-card--prime">
+          <h3>Prime Time</h3>
+          <div class="rate-card__price">{{tennis.courtTimes.primeRate}}</div>
+          <p class="text-sm text-muted">{{tennis.courtTimes.primeBooking}}</p>
+        </div>
+        <div class="rate-card">
+          <h3>Non-Prime</h3>
+          <div class="rate-card__price">{{tennis.courtTimes.nonPrimeRate}}</div>
+          <p class="text-sm text-muted">{{tennis.courtTimes.nonPrimeBooking}}</p>
+        </div>
+        <div class="rate-card">
+          <h3>Free Court Time</h3>
+          <div class="rate-card__price" style="font-size: 1.1rem;">Free</div>
+          <p class="text-sm text-muted">{{tennis.courtTimes.freeNote}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div class="section-header">
+            <span class="section-header__label">September – May</span>
+            <h2>Regular Season Schedule</h2>
+          </div>
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Prime</th>
+                <th>Non-Prime</th>
+              </tr>
+            </thead>
+            {{#each tennis.courtTimes.regularSchedule}}
+            <tr>
+              <td>{{this.days}}</td>
+              <td>{{this.prime}}</td>
+              <td>{{this.nonPrime}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="section-header">
+            <span class="section-header__label">Memorial Day – Labor Day</span>
+            <h2>Summer Schedule</h2>
+          </div>
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Prime</th>
+                <th>Non-Prime</th>
+              </tr>
+            </thead>
+            {{#each tennis.courtTimes.summerSchedule}}
+            <tr>
+              <td>{{this.days}}</td>
+              <td>{{this.prime}}</td>
+              <td>{{this.nonPrime}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+      </div>
+
+      <div class="info-box mt-12 reveal" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+        <div class="info-box__title">Permanent Reservations</div>
+        <p class="text-sm">{{tennis.courtTimes.permanentReservation}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="trial-banner reveal">
+        <h2>Ready to Book a Court?</h2>
+        <p>Call or text us to reserve your court time, or fill out our inquiry form for more information.</p>
+        <div>
+          <a href="tennis-inquiry.html" class="btn btn--primary btn--lg">Tennis Inquiry</a>
+        </div>
+        <p class="phone-link mt-4" style="justify-content: center;">
+          <a href="tel:{{staff.mainLine.phonePlain}}" style="color: rgba(255,255,255,0.9); font-weight: 600;">{{staff.mainLine.phone}}</a>
+          <span class="phone-link__badge">Call or Text</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

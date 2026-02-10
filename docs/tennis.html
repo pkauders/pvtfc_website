@@ -15,24 +15,53 @@
   <div class="header__inner">
     <a href="index.html" class="header__logo">
       <span class="header__logo-icon">PV</span>
-      Pleasant Valley
+      <span class="header__logo-text">Pleasant Valley<span class="header__logo-sub">Tennis &amp; Fitness Club</span></span>
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav').classList.toggle('nav--open')">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
     <nav class="nav" role="navigation">
       
-      <a href="tennis.html" class="nav__link">Tennis</a>
+      
+      <div class="nav__dropdown">
+        <a href="tennis.html" class="nav__link">Tennis <svg class="nav__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__dropdown-menu">
+          
+          <a href="junior-tennis.html" class="nav__dropdown-link">Junior Tennis</a>
+          
+          <a href="adult-tennis.html" class="nav__dropdown-link">Adult Lessons</a>
+          
+          <a href="private-lessons.html" class="nav__dropdown-link">Private Lessons</a>
+          
+          <a href="court-times.html" class="nav__dropdown-link">Court Times & Rates</a>
+          
+          <a href="summer-camps.html" class="nav__dropdown-link">Summer Camps</a>
+          
+          <a href="tennis-inquiry.html" class="nav__dropdown-link">Tennis Inquiry</a>
+          
+        </div>
+      </div>
+      
+      
       
       <a href="fitness.html" class="nav__link">Fitness</a>
       
+      
+      
       <a href="pickleball.html" class="nav__link">Pickleball</a>
+      
+      
       
       <a href="memberships.html" class="nav__link">Memberships</a>
       
+      
+      
       <a href="amenities.html" class="nav__link">Amenities</a>
       
+      
+      
       <a href="contact.html" class="nav__link">Contact</a>
+      
       
       <a href="memberships.html" class="nav__cta">Join Now</a>
     </nav>
@@ -45,43 +74,92 @@
       <img src="assets/images/indoor_courts.webp" alt="PVTFC Tennis Courts">
     </div>
     <div class="container">
-      <div class="page-hero__breadcrumb"><a href="index.html">Home</a> / Tennis</div>
+      <span class="page-hero__label">Programs</span>
       <h1>Tennis</h1>
-      <p>Programs for Every Player</p>
+      <div class="page-hero__accent"></div>
+      <p>Programs for every player, every age, every level</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="two-col">
-        <div class="reveal">
-          <div class="section-header">
-            <span class="section-header__label">Overview</span>
-            <h2>Programs for Every Player</h2>
-          </div>
-          <p>Our tennis programs span all ages and skill levels—from youth and juniors to adults. Whether you're picking up a racquet for the first time or competing in league play, we have the programs and pros to keep you in the game.</p>
-          <div class="mt-6">
-            <div class="info-box">
-              <div class="info-box__title">Rating System</div>
-              <p class="text-sm">We use the National Tennis Rating Program (NTRP) to ensure players are matched with appropriate skill-level groups for lessons and league play.</p>
-            </div>
-          </div>
-          <div class="mt-6">
-            <p class="text-sm text-muted">Questions about tennis programs?</p>
-            <p class="font-semibold">Contact Gian Pico</p>
-            <p class="phone-link mt-2">
-              <a href="tel:2626773681">(262) 677-3681</a>
-              <span class="phone-link__badge">Call or Text</span>
-            </p>
-          </div>
-        </div>
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Overview</span>
+        <h2>Your Home Court</h2>
+        <p>With 8 indoor and 5 outdoor courts, our tennis programs span all ages and skill levels—from youth and juniors to adults. Whether you're picking up a racquet for the first time or competing in league play, we have the programs and pros to keep you in the game.</p>
+      </div>
 
-        <div class="reveal reveal-delay-2">
+      <div class="program-grid reveal reveal-delay-1">
+        <a href="junior-tennis.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Junior Tennis</h3>
+          <p>Six levels from Red Ball (ages 4+) through Elite Performance. Building champions at every stage.</p>
+          <span class="program-card__link">View Programs &rarr;</span>
+        </a>
+
+        <a href="adult-tennis.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Adult Lessons</h3>
+          <p>Tennis Aerobics, open drills, and group sessions for all skill levels. Drop-in or register.</p>
+          <span class="program-card__link">View Programs &rarr;</span>
+        </a>
+
+        <a href="private-lessons.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Private Lessons</h3>
+          <p>One-on-one and small group instruction with five experienced club professionals.</p>
+          <span class="program-card__link">View Details &rarr;</span>
+        </a>
+
+        <a href="court-times.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Court Times & Rates</h3>
+          <p>8 indoor and 5 outdoor courts. Prime and non-prime rates, permanent reservations available.</p>
+          <span class="program-card__link">View Rates &rarr;</span>
+        </a>
+
+        <a href="summer-camps.html" class="program-card">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </div>
+          <h3>Summer Camps</h3>
+          <p>Weekly camps from June through August. Half-day and full-day options for ages 4–18.</p>
+          <span class="program-card__link">View Camps &rarr;</span>
+        </a>
+
+        <a href="tennis-inquiry.html" class="program-card program-card--cta">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Tennis Inquiry</h3>
+          <p>Not sure where to start? Fill out our inquiry form and we'll help you find the right program.</p>
+          <span class="program-card__link">Start Inquiry &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      <div class="two-col reveal">
+        <div>
           <div class="section-header">
-            <span class="section-header__label">Programs</span>
-            <h2>What We Offer</h2>
+            <span class="section-header__label">Our Facilities</span>
+            <h2>World-Class Courts</h2>
           </div>
           <ul class="feature-list">
+            
+            <li>8 Indoor Courts</li>
+            
+            <li>5 Outdoor Courts (Seasonal)</li>
             
             <li>Junior Lessons & Clinics</li>
             
@@ -98,33 +176,41 @@
             <li>Court Reservations</li>
             
           </ul>
+          <div class="info-box mt-8">
+            <div class="info-box__title">Rating System</div>
+            <p class="text-sm">We use the National Tennis Rating Program (NTRP) to ensure players are matched with appropriate skill-level groups for lessons and league play.</p>
+          </div>
         </div>
-      </div>
-
-      <div class="image-gallery mt-12 reveal reveal-delay-3">
-        
-        <div class="image-gallery__item">
-          <img src="assets/images/indoor_courts.webp" alt="PVTFC Tennis" loading="lazy">
+        <div>
+          <div class="image-gallery">
+            
+            <div class="image-gallery__item">
+              <img src="assets/images/indoor_courts.webp" alt="PVTFC Tennis" loading="lazy">
+            </div>
+            
+            <div class="image-gallery__item">
+              <img src="assets/images/outdoor_courts_with_people.webp" alt="PVTFC Tennis" loading="lazy">
+            </div>
+            
+            <div class="image-gallery__item">
+              <img src="assets/images/indoor_courts_with_pickleball_and_people.webp" alt="PVTFC Tennis" loading="lazy">
+            </div>
+            
+          </div>
         </div>
-        
-        <div class="image-gallery__item">
-          <img src="assets/images/outdoor_courts_with_people.webp" alt="PVTFC Tennis" loading="lazy">
-        </div>
-        
-        <div class="image-gallery__item">
-          <img src="assets/images/indoor_courts_with_pickleball_and_people.webp" alt="PVTFC Tennis" loading="lazy">
-        </div>
-        
       </div>
     </div>
   </section>
 
-  <section class="section section--gray">
+  <section class="section">
     <div class="container">
       <div class="trial-banner reveal">
         <h2>Ready to Hit the Court?</h2>
-        <p>Whether you're a beginner or a seasoned player, we have a program for you. Contact us to learn about upcoming sessions and league play.</p>
-        <a href="contact.html" class="btn btn--primary btn--lg">Contact Us</a>
+        <p>Whether you're a beginner or a seasoned player, we have a program for you. Fill out our tennis inquiry and we'll match you with the perfect program.</p>
+        <div>
+          <a href="tennis-inquiry.html" class="btn btn--primary btn--lg">Tennis Inquiry</a>
+          <a href="contact.html" class="btn btn--ghost btn--lg" style="color: rgba(255,255,255,0.8);">Contact Us</a>
+        </div>
       </div>
     </div>
   </section>
@@ -139,14 +225,33 @@
       </div>
       
       <div>
-        <div class="footer__heading">Programs</div>
+        <div class="footer__heading">Tennis</div>
         <ul class="footer__links">
           
-          <li><a href="tennis.html">Tennis</a></li>
+          <li><a href="tennis.html">Tennis Overview</a></li>
+          
+          <li><a href="junior-tennis.html">Junior Tennis</a></li>
+          
+          <li><a href="adult-tennis.html">Adult Lessons</a></li>
+          
+          <li><a href="private-lessons.html">Private Lessons</a></li>
+          
+          <li><a href="court-times.html">Court Times</a></li>
+          
+          <li><a href="summer-camps.html">Summer Camps</a></li>
+          
+        </ul>
+      </div>
+      
+      <div>
+        <div class="footer__heading">Programs</div>
+        <ul class="footer__links">
           
           <li><a href="fitness.html">Fitness</a></li>
           
           <li><a href="pickleball.html">Pickleball</a></li>
+          
+          <li><a href="amenities.html">Amenities</a></li>
           
         </ul>
       </div>
@@ -157,9 +262,9 @@
           
           <li><a href="memberships.html">Memberships</a></li>
           
-          <li><a href="amenities.html">Amenities</a></li>
-          
           <li><a href="contact.html">Contact & Team</a></li>
+          
+          <li><a href="tennis-inquiry.html">Tennis Inquiry</a></li>
           
         </ul>
       </div>

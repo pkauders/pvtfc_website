@@ -1,6 +1,18 @@
 {
   "main": [
-    { "label": "Tennis", "href": "tennis.html" },
+    {
+      "label": "Tennis",
+      "href": "tennis.html",
+      "hasDropdown": true,
+      "children": [
+        { "label": "Junior Tennis", "href": "junior-tennis.html" },
+        { "label": "Adult Lessons", "href": "adult-tennis.html" },
+        { "label": "Private Lessons", "href": "private-lessons.html" },
+        { "label": "Court Times & Rates", "href": "court-times.html" },
+        { "label": "Summer Camps", "href": "summer-camps.html" },
+        { "label": "Tennis Inquiry", "href": "tennis-inquiry.html" }
+      ]
+    },
     { "label": "Fitness", "href": "fitness.html" },
     { "label": "Pickleball", "href": "pickleball.html" },
     { "label": "Memberships", "href": "memberships.html" },
@@ -9,19 +21,30 @@
   ],
   "footer": [
     {
+      "heading": "Tennis",
+      "links": [
+        { "label": "Tennis Overview", "href": "tennis.html" },
+        { "label": "Junior Tennis", "href": "junior-tennis.html" },
+        { "label": "Adult Lessons", "href": "adult-tennis.html" },
+        { "label": "Private Lessons", "href": "private-lessons.html" },
+        { "label": "Court Times", "href": "court-times.html" },
+        { "label": "Summer Camps", "href": "summer-camps.html" }
+      ]
+    },
+    {
       "heading": "Programs",
       "links": [
-        { "label": "Tennis", "href": "tennis.html" },
         { "label": "Fitness", "href": "fitness.html" },
-        { "label": "Pickleball", "href": "pickleball.html" }
+        { "label": "Pickleball", "href": "pickleball.html" },
+        { "label": "Amenities", "href": "amenities.html" }
       ]
     },
     {
       "heading": "Club",
       "links": [
         { "label": "Memberships", "href": "memberships.html" },
-        { "label": "Amenities", "href": "amenities.html" },
-        { "label": "Contact & Team", "href": "contact.html" }
+        { "label": "Contact & Team", "href": "contact.html" },
+        { "label": "Tennis Inquiry", "href": "tennis-inquiry.html" }
       ]
     }
   ]

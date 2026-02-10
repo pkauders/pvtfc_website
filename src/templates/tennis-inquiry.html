@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Tennis Inquiry — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/images/indoor_courts.webp" alt="PVTFC Tennis Inquiry">
+    </div>
+    <div class="container">
+      <span class="page-hero__label">Get Started</span>
+      <h1>Tennis Inquiry</h1>
+      <div class="page-hero__accent"></div>
+      <p>Tell us about yourself and we'll find the right program</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="inquiry-layout">
+        <div class="reveal">
+          <div class="section-header">
+            <span class="section-header__label">Inquiry Form</span>
+            <h2>Let's Get You Started</h2>
+          </div>
+          <p class="text-muted mb-8">Fill out the form below and our tennis staff will reach out within one business day to discuss your options.</p>
+
+          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="program">Program Interest</label>
+                <select id="program" name="program" required>
+                  <option value="">Select a program...</option>
+                  {{#each tennis.inquiryForm.programs}}
+                  <option value="{{this}}">{{this}}</option>
+                  {{/each}}
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="playerAge">Player Age</label>
+                <input type="number" id="playerAge" name="playerAge" min="3" max="99" placeholder="Age of player">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="skillLevel">Current Skill Level</label>
+              <select id="skillLevel" name="skillLevel">
+                <option value="">Select skill level...</option>
+                {{#each tennis.inquiryForm.skillLevels}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details (optional)</label>
+              <textarea id="message" name="message" placeholder="Tell us about your goals, scheduling preferences, or any questions you have..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-checkbox">
+                <input type="checkbox" name="isMember" value="yes">
+                <span>I am currently a PVTFC member</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary">Submit Inquiry</button>
+          </form>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="inquiry-sidebar">
+            <div class="info-box" style="background: rgba(16,185,129,0.04); border-color: rgba(16,185,129,0.15);">
+              <div class="info-box__title">Prefer to Call?</div>
+              <p class="text-sm mb-4">Our tennis staff is happy to answer any questions over the phone.</p>
+              <p class="phone-link">
+                <a href="tel:{{staff.mainLine.phonePlain}}" class="font-semibold text-primary">{{staff.mainLine.phone}}</a>
+                <span class="phone-link__badge">Call or Text</span>
+              </p>
+            </div>
+
+            <div class="info-box mt-6">
+              <div class="info-box__title">Quick Links</div>
+              <ul class="inquiry-links">
+                <li><a href="junior-tennis.html">Junior Tennis Levels</a></li>
+                <li><a href="adult-tennis.html">Adult Lessons</a></li>
+                <li><a href="private-lessons.html">Private Lessons</a></li>
+                <li><a href="court-times.html">Court Times & Rates</a></li>
+                <li><a href="summer-camps.html">Summer Camps</a></li>
+                <li><a href="memberships.html">Membership Info</a></li>
+              </ul>
+            </div>
+
+            <div class="info-box mt-6">
+              <div class="info-box__title">Tennis Director</div>
+              <p class="font-semibold">Gian Pico</p>
+              <p class="text-sm text-muted">Oversees all tennis programming including junior and adult lessons, leagues, and tournaments.</p>
+              <p class="text-sm mt-2"><a href="mailto:gian@pvtfc.com">gian@pvtfc.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>

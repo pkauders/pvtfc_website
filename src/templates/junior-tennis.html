@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <title>Junior Tennis Programs — {{site.name}}</title>
+</head>
+<body>
+  {{> header}}
+
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="{{services.tennis.images.hero}}" alt="PVTFC Junior Tennis">
+    </div>
+    <div class="container">
+      <span class="page-hero__label">Junior Programs</span>
+      <h1>Junior Tennis</h1>
+      <div class="page-hero__accent"></div>
+      <p>Six levels from first-timers to tournament players</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Our Levels</span>
+        <h2>Find Your Level</h2>
+        <p>Each level is designed to develop skills progressively. Sessions run 6–8 weeks. Contact us for current session dates and availability.</p>
+      </div>
+
+      <div class="level-grid">
+        {{#each tennis.juniorLevels}}
+        <div class="level-card reveal">
+          <div class="level-card__header" style="border-left-color: {{this.color}};">
+            <div>
+              <h3>{{this.name}}</h3>
+              <span class="level-card__ages">{{this.ages}}</span>
+            </div>
+          </div>
+          <p class="level-card__desc">{{this.description}}</p>
+          <div class="level-card__schedule">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            {{this.schedule}}
+          </div>
+          <h4 class="level-card__skills-title">What You'll Learn</h4>
+          <ul class="level-card__skills">
+            {{#each this.skills}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="info-box mt-12 text-center reveal" style="max-width: 640px; margin-left: auto; margin-right: auto;">
+        <div class="info-box__title">Registration</div>
+        <p class="text-sm">Sessions run 6–8 weeks. Contact us by phone or fill out a tennis inquiry to register or learn about upcoming session dates and pricing.</p>
+        <div class="mt-4" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="tennis-inquiry.html" class="btn btn--primary">Tennis Inquiry</a>
+          <p class="phone-link" style="display: flex; align-items: center;">
+            <a href="tel:{{staff.mainLine.phonePlain}}" class="font-semibold text-primary">{{staff.mainLine.phone}}</a>
+            <span class="phone-link__badge">Call or Text</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      <div class="trial-banner reveal">
+        <h2>Not Sure Which Level?</h2>
+        <p>Our pros will evaluate your child and recommend the perfect starting point. Schedule a free assessment today.</p>
+        <a href="tennis-inquiry.html" class="btn btn--primary btn--lg">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  {{> footer}}
+</body>
+</html>
