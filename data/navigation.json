@@ -44,7 +44,8 @@
       "links": [
         { "label": "Memberships", "href": "memberships.html" },
         { "label": "Contact & Team", "href": "contact.html" },
-        { "label": "Tennis Inquiry", "href": "tennis-inquiry.html" }
+        { "label": "Tennis Inquiry", "href": "tennis-inquiry.html" },
+        { "label": "Privacy Policy", "href": "privacy-policy.html" }
       ]
     }
   ]
